@@ -4,7 +4,6 @@ import { TableHeaderOffer } from '../shared/const'
 import { useEffect, useState } from 'react'
 import { ButtonIcon, CardMetric, Selector } from '@/shared/ui'
 import Icon from '@/shared/assets/icons/platforms/Google Ads.svg';
-import { CardCurrency } from '@/shared/ui/CardCurrency/CardCurrency'
 import type { MetricsData } from '@/shared/types'
 import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
 import { Sidebar } from '@/widgets/Sidebar'
@@ -31,7 +30,6 @@ function App() {
         <Selector icon={Icon} placeholder='Выберите дату' options={[{label: 'label', value: 'value'}, {label: 'label', value: 'value'}, {label: 'label', value: 'value'}]}/>
         <Table header={TableHeaderOffer} data={offers}/>
         <ButtonIcon src={Icon} alt='dawd'/>
-        <CardCurrency />
         {currentMetrics && <CardMetric
             title="Расходы"
             value={20}

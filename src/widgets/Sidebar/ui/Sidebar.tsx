@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import cls from './Sidebar.module.scss'
 import { Logo } from '@/shared/ui';
+import { WalletList } from '@/entities/Wallets';
 
 export const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -14,7 +15,10 @@ export const Sidebar = () => {
         <div className={cls.header}>
             <Logo />
         </div>
-        <button onClick={toggleSidebar}>Toggle</button>
+        <div className={cls.main}>
+            <WalletList />
+            <button onClick={toggleSidebar}>Toggle</button>
+        </div>
     </aside>
   )
 }

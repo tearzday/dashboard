@@ -1,5 +1,4 @@
 export { ButtonIcon } from './ButtonIcon/ButtonIcon'
-export { CardCurrency } from './CardCurrency/CardCurrency'
 export { CardMetric } from './CardMetric/CardMetric'
 export { Typography } from './Typography/Typography'
 export { TypographyTheme, TypographyVariant, TypographyWeight } from './Typography/const'
