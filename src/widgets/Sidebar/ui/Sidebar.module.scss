@@ -1,0 +1,13 @@
+.sidebar {
+    height: calc(100svh);
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: width $transition;
+    border-right: 1px solid $color-border;
+}
+
+.collapsed {
+    width: 300px;
+}

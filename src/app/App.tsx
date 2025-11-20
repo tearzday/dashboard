@@ -7,6 +7,7 @@ import Icon from '@/shared/assets/icons/platforms/Google Ads.svg';
 import { CardCurrency } from '@/shared/ui/CardCurrency/CardCurrency'
 import type { MetricsData } from '@/shared/types'
 import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
+import { Sidebar } from '@/widgets/Sidebar'
 
 function App() {
   const [currentMetrics, setCurrentMetrics] = useState<MetricsData | null>(null)
@@ -24,19 +25,22 @@ function App() {
     data()
   }, [])
   return (
-    <div style={{display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'flex-start'}}>
-    <Selector icon={Icon} placeholder='Выберите дату' options={[{label: 'label', value: 'value'}, {label: 'label', value: 'value'}, {label: 'label', value: 'value'}]}/>
-     <Table header={TableHeaderOffer} data={offers}/>
-     <ButtonIcon src={Icon} alt='dawd'/>
-     <CardCurrency />
-     {currentMetrics && <CardMetric
-        title="Расходы"
-        value={20}
-        change={10}
-        changeType='increase'
-      />
-      }
-      <CardInfo />
+    <div style={{display: 'flex'}}>
+      <Sidebar />
+      <div style={{display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'flex-start', flex: 1, padding: '20px'}}>
+        <Selector icon={Icon} placeholder='Выберите дату' options={[{label: 'label', value: 'value'}, {label: 'label', value: 'value'}, {label: 'label', value: 'value'}]}/>
+        <Table header={TableHeaderOffer} data={offers}/>
+        <ButtonIcon src={Icon} alt='dawd'/>
+        <CardCurrency />
+        {currentMetrics && <CardMetric
+            title="Расходы"
+            value={20}
+            change={10}
+            changeType='increase'
+          />
+          }
+        <CardInfo />
+      </div>
     </div>
   )
 }
