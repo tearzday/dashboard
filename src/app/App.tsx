@@ -4,6 +4,7 @@ import { TableHeaderOffer } from '../shared/const'
 import { useEffect, useState } from 'react'
 import { ButtonIcon } from '@/shared/ui'
 import Icon from '@/app/assets/icons/platforms/Google Ads.svg';
+import { CardCurrency } from '@/shared/ui/CardCurrency/CardCurrency'
 
 function App() {
   const [currentMetrics, setCurrentMetrics] = useState([])
@@ -24,6 +25,7 @@ function App() {
     <>
      <Table header={TableHeaderOffer} data={offers}/>
      <ButtonIcon src={Icon} alt='dawd'/>
+     <CardCurrency />
     </>
   )
 }
