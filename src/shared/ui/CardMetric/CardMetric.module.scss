@@ -1,0 +1,52 @@
+.card {
+    width: 326px;
+    height: 138px;
+    border: 1px solid $color-border;
+    border-radius: $rounded-xl;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $rounded-full;
+        background-color: $color-gray;
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__value {
+        font-size: $text-2xl;
+        font-weight: 500;
+    }
+
+    &__change {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+
+        &--increase {
+            color: $color-success;
+        }
+
+        &--decrease {
+            color: $color-error;
+        }
+    }
+}

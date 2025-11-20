@@ -1,4 +1,4 @@
-import type { OffersData, TableHeader } from "@/shared/types";
+import type { OfferData, TableHeader } from "@/shared/types";
 import cls from './Table.module.scss'
 import { TableCell } from "./TableCell/TableCell";
 import { TableRow } from "./TableRow/TableRow";
@@ -6,7 +6,7 @@ import { TableRow } from "./TableRow/TableRow";
 
 interface TabelProps {
     header: TableHeader[];
-    data: OffersData[];
+    data: OfferData[];
 }
 
 export const Table = ({header, data}: TabelProps) => {
