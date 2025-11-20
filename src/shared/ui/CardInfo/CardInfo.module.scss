@@ -1,0 +1,38 @@
+.card {
+    width: 430px;
+    height: 340px;
+    border: 1px solid $color-border;
+    border-radius: $rounded-md;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: $text-xl;
+        font-weight: 500;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 0px;
+
+        &-title {
+            color: $color-additional;
+        }
+    }
+}

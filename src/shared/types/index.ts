@@ -33,3 +33,8 @@ export interface MetricsData {
     cpa: MetricData,
     cpc: MetricData
 }
+
+export interface CardInfoItem {
+    title: string,
+    value: string,
+}

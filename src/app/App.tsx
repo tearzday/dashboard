@@ -6,6 +6,7 @@ import { ButtonIcon, CardMetric } from '@/shared/ui'
 import Icon from '@/app/assets/icons/platforms/Google Ads.svg';
 import { CardCurrency } from '@/shared/ui/CardCurrency/CardCurrency'
 import type { MetricsData } from '@/shared/types'
+import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
 
 function App() {
   const [currentMetrics, setCurrentMetrics] = useState<MetricsData | null>(null)
@@ -34,6 +35,7 @@ function App() {
         changeType='increase'
       />
       }
+      <CardInfo />
     </>
   )
 }

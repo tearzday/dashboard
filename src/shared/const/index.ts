@@ -1,4 +1,4 @@
-import type { TableHeader } from "../types";
+import type { CardInfoItem, TableHeader } from "../types";
 
 export const TableHeaderOffer: TableHeader[] = [
     {
@@ -26,4 +26,31 @@ export const TableHeaderOffer: TableHeader[] = [
         key: "status",
         label: "Статус",
     },
+]
+
+export const CardInfoData: CardInfoItem[] = [
+    {
+        title: 'Дата запуска',
+        value: '15.06.2025'
+    },
+    {
+        title: 'Направление',
+        value: 'E-Commerce'
+    },
+    {
+        title: 'Объект',
+        value: 'App'
+    },
+    {
+        title: 'Цель',
+        value: 'CPA'
+    },
+    {
+        title: 'Трекер',
+        value: 'AppsFlyer'
+    },
+    {
+        title: 'Гео',
+        value: 'RU, UA, KZ'
+    }
 ]
