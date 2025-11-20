@@ -1,13 +1,15 @@
 import type { CardInfoItem } from '@/shared/types'
 import cls from './CardInfo.module.scss'
 import { CardInfoData } from '@/shared/const'
+import { Typography } from '../Typography/Typography'
+import { TypographyTheme, TypographyVariant, TypographyWeight } from '../Typography/const'
 
 export const CardInfo = () => {
   return (
     <div className={cls.card}>
         <div className={cls.card__header}>
-            <p className={cls.card__title}>Баланс</p>
-            <p className={cls.card__title}>$ 150 345.00 </p>
+            <Typography variant={TypographyVariant.H2}>Баланс</Typography>
+            <Typography variant={TypographyVariant.H2} theme={TypographyTheme.ACCENT}>$ 150 345.00</Typography>
         </div>
         <ul className={cls.card__list}>
             {
@@ -21,8 +23,8 @@ export const CardInfo = () => {
 const CardItem = ({title, value}: CardInfoItem) => {
     return (
         <li className={cls.card__item}>
-            <p className={cls['card__item-title']}>{title}:</p>
-            <p className={cls['card__item-value']}>{value}</p>
+            <Typography theme={TypographyTheme.ADDITIONAL}>{title}:</Typography>
+            <Typography weight={TypographyWeight.MEDIUM}>{value}</Typography>
         </li>
     )
 }

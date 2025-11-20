@@ -1,0 +1,53 @@
+.h1 {
+    font-size: $text-2xl;
+    font-family: $font-secondary;
+    font-weight: 500;
+}
+
+.h2 {
+    font-size: $text-xl;
+    font-family: $font-secondary;
+    font-weight: 500;
+}
+
+.h4 {
+    font-size: $text-md;
+    font-family: $font-secondary;
+    font-weight: 500;
+}
+
+.body1 {
+    font-size: $text-lg;
+}
+
+.body2 {
+    font-size: $text-md;
+}
+
+.default {
+    color: $color-secondary;
+}
+
+.accent {
+    color: $color-accent;
+}
+
+.additional {
+    color: $color-additional;
+}
+
+.success {
+    color: $color-success;
+}
+
+.error {
+    color: $color-error;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.regular {
+    font-weight: 400;
+}

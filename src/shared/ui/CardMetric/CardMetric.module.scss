@@ -30,23 +30,10 @@
         justify-content: space-between;
     }
 
-    &__value {
-        font-size: $text-2xl;
-        font-weight: 500;
-    }
-
     &__change {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1px;
-
-        &--increase {
-            color: $color-success;
-        }
-
-        &--decrease {
-            color: $color-error;
-        }
     }
 }
