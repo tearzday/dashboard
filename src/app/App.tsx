@@ -1,6 +1,6 @@
-import { Table } from './entities/Table'
+import { Table } from '../entities/Table'
 import './styles/index.scss'
-import { TableHeaderOffer } from './shared/const'
+import { TableHeaderOffer } from '../shared/const'
 import { useEffect, useState } from 'react'
 
 function App() {
