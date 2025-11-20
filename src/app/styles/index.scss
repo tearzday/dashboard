@@ -1,5 +1,7 @@
 @use './normalize.scss';
+@use './fonts.scss';
 
 body {
     background-color: $color-primary;
+    font-family: $font-primary;
 }

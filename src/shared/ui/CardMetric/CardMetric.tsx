@@ -1,7 +1,7 @@
 import cls from './CardMetric.module.scss'
-import Finance from '@/app/assets/icons/metrics/Finance.svg'
-import increaseIcon from '@/app/assets/icons/increase.svg'
-import decreaseIcon from '@/app/assets/icons/decrease.svg'
+import Finance from '@/shared/assets/icons/metrics/Finance.svg'
+import increaseIcon from '@/shared/assets/icons/increase.svg'
+import decreaseIcon from '@/shared/assets/icons/decrease.svg'
 
 interface CardMetricProps {
     title: string;

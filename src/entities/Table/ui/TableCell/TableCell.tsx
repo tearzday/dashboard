@@ -1,5 +1,5 @@
 import cls from './TableCell.module.scss'
-import SortIcon from '@/app/assets/icons/sort-icon.svg'
+import SortIcon from '@/shared/assets/icons/sort-icon.svg'
 
 interface TableCellProps {
     key: string;

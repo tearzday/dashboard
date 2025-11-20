@@ -1,5 +1,5 @@
 import cls from './CardCurrency.module.scss'
-import Flag from '@/app/assets/flags/russia.svg'
+import Flag from '@/shared/assets/flags/russia.svg'
 
 export const CardCurrency = () => {
   return (

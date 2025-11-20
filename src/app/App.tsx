@@ -3,7 +3,7 @@ import './styles/index.scss'
 import { TableHeaderOffer } from '../shared/const'
 import { useEffect, useState } from 'react'
 import { ButtonIcon, CardMetric } from '@/shared/ui'
-import Icon from '@/app/assets/icons/platforms/Google Ads.svg';
+import Icon from '@/shared/assets/icons/platforms/Google Ads.svg';
 import { CardCurrency } from '@/shared/ui/CardCurrency/CardCurrency'
 import type { MetricsData } from '@/shared/types'
 import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
