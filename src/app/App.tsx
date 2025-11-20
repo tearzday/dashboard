@@ -2,6 +2,8 @@ import { Table } from '../entities/Table'
 import './styles/index.scss'
 import { TableHeaderOffer } from '../shared/const'
 import { useEffect, useState } from 'react'
+import { ButtonIcon } from '@/shared/ui'
+import Icon from '@/app/assets/icons/platforms/Google Ads.svg';
 
 function App() {
   const [currentMetrics, setCurrentMetrics] = useState([])
@@ -21,6 +23,7 @@ function App() {
   return (
     <>
      <Table header={TableHeaderOffer} data={offers}/>
+     <ButtonIcon src={Icon} alt='dawd'/>
     </>
   )
 }
