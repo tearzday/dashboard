@@ -1,0 +1,32 @@
+.selector {
+    position: relative;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    border: 1px solid $color-border;
+    border-radius: $rounded-lg;
+    padding: 8px 16px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+}
+
+.item {
+    background-color: $color-gray;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $color-additional;
+    }
+}
