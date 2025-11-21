@@ -7,6 +7,9 @@ import Icon from '@/shared/assets/platforms/Google Ads.svg';
 import type { MetricsData } from '@/shared/types'
 import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
 import { Sidebar } from '@/widgets/Sidebar'
+import { StatusBadge } from '@/shared/ui'
+import { StatusBadgeType } from '@/shared/ui/StatusBadge/const'
+
 
 function App() {
   const [currentMetrics, setCurrentMetrics] = useState<MetricsData | null>(null)
@@ -30,6 +33,9 @@ function App() {
         <Selector icon={Icon} placeholder='Выберите дату' options={[{label: 'label', value: 'value'}, {label: 'label', value: 'value'}, {label: 'label', value: 'value'}]}/>
         <Table header={TableHeaderOffer} data={offers}/>
         <ButtonIcon src={Icon} alt='dawd'/>
+        <StatusBadge status={StatusBadgeType.ACTIVE}/>
+        <StatusBadge status={StatusBadgeType.PAUSED}/>
+        <StatusBadge status={StatusBadgeType.STOPPED}/>
         {currentMetrics && <CardMetric
             title="Расходы"
             value={20}

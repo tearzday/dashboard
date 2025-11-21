@@ -11,7 +11,8 @@ export enum TypographyTheme {
     ACCENT = 'accent',
     ADDITIONAL = 'additional',
     SUCCESS = 'success',
-    ERROR = 'error'
+    ERROR = 'error',
+    WARNING = 'warning'
 }
 
 export enum TypographyWeight {

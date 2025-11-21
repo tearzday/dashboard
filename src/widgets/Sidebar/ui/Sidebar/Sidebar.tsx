@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import cls from './Sidebar.module.scss'
-import { Logo } from '@/shared/ui';
+import { Devider, Logo } from '@/shared/ui';
 import { WalletList } from '@/entities/Wallets';
 import { SidebarSection } from '../SidebarSection/SidebarSection';
 import { SidebarData } from '../../model/const';
@@ -20,7 +20,14 @@ export const Sidebar = () => {
         <div className={cls.main}>
             <WalletList />
             {
-              SidebarData.map(section => <SidebarSection title={section.title} items={section.items}/>)
+              SidebarData.map((section, index) => {
+                return (
+                  <>
+                    <SidebarSection title={section.title} items={section.items}/>
+                    {index < SidebarData.length - 1 && <Devider />}
+                  </>
+                )
+              })
             }
             <button onClick={toggleSidebar}>Toggle</button>
         </div>
