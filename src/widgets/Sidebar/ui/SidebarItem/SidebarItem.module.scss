@@ -1,0 +1,14 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: $rounded-lg;
+}
+
+.big {
+    padding: 16px;
+}
+
+.medium {
+    padding: 0px 16px;
+}

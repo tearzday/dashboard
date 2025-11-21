@@ -1,5 +1,5 @@
 import cls from './CardMetric.module.scss'
-import Finance from '@/shared/assets/icons/metrics/Finance.svg'
+import Finance from '@/shared/assets/icons/finance.svg'
 import increaseIcon from '@/shared/assets/icons/increase.svg'
 import decreaseIcon from '@/shared/assets/icons/decrease.svg'
 import { Typography } from '../Typography/Typography';
