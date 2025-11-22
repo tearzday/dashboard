@@ -1,4 +1,5 @@
 
+import { NotFoundPage } from "@/pages/NotFoundPage"
 import { OffersPage } from "@/pages/OffersPage"
 import type { RouteProps } from "react-router"
 
@@ -17,4 +18,8 @@ export const routerConfig: RouteProps[] = [
         path: RouterPath.offers,
         element: <OffersPage />
     },
+    {
+        path: RouterPath.not_found,
+        element: <NotFoundPage />
+    }
 ]
