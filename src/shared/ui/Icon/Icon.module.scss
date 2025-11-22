@@ -33,6 +33,12 @@
     border-radius: $rounded-full;
     border: 1px solid $color-border;
     color: $color-secondary;
+    cursor: pointer;
+    transition: background-color $transition;
+
+    &:hover {
+        background-color: $color-border;
+    }
 }
 
 .badge {
@@ -42,5 +48,5 @@
     border-radius: $rounded-full;
     position: absolute;
     top: 3px;
-    right: 3px;
+    right: 0px;
 }
