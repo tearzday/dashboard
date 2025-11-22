@@ -5,12 +5,14 @@ import { IconVariant } from './const';
 interface IconProps{
   icon: FC<SVGProps<SVGSVGElement>>;
   variant?: IconVariant;
-  badge?: boolean
+  badge?: boolean;
+  className?: string;
+  onClick?: () => void;
 }
 
-export const Icon = ({icon: IconTag, variant, badge, ...otherProps}: IconProps) => {
+export const Icon = ({icon: IconTag, variant, badge, className, onClick}: IconProps) => {
   return (
-    <div className={`${cls.icon} ${variant ? cls[variant] : ''}`} {...otherProps}>
+    <div className={`${cls.icon} ${variant ? cls[variant] : ''} ${className ? className : ''}`} onClick={onClick}>
         {badge && <div className={cls.badge}/>}
         <IconTag />
     </div>

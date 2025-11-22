@@ -1,10 +1,10 @@
 import type { ISidebarSection } from "./type";
-import GoogleIcon from "@/shared/assets/platforms/Google.svg"
-import TikTokIcon from "@/shared/assets/platforms/TikTok.svg"
-import MenuIcon from "@/shared/assets/icons/menu.svg"
-import OffersIcon from "@/shared/assets/icons/offers.svg"
-import AccountsIcon from "@/shared/assets/icons/accounts.svg"
-import FinanceIcon from "@/shared/assets/icons/finance.svg"
+import GoogleIcon from "@/shared/assets/platforms/Google.svg?react"
+import TikTokIcon from "@/shared/assets/platforms/TikTok.svg?react"
+import MenuIcon from "@/shared/assets/icons/menu.svg?react"
+import OffersIcon from "@/shared/assets/icons/offers.svg?react"
+import AccountsIcon from "@/shared/assets/icons/accounts.svg?react"
+import FinanceIcon from "@/shared/assets/icons/finance.svg?react"
 import { SidbarItemVariant } from "../ui/SidebarItem/const";
 
 const MenuData: ISidebarSection = {

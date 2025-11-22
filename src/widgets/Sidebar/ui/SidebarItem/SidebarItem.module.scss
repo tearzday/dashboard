@@ -3,6 +3,15 @@
     align-items: center;
     gap: 24px;
     border-radius: $rounded-lg;
+    text-decoration: none;
+    transition: $transition;
+
+        &:hover {
+        background-color: $color-gray;
+        .icon, span {
+            color: $color-accent !important;
+        }
+    }
 }
 
 .big {
@@ -11,4 +20,15 @@
 
 .medium {
     padding: 0px 16px;
+}
+
+.active {
+      background-color: $color-gray;
+      
+}
+
+.icon {
+    &--active {
+        color: $color-accent;
+    }
 }

@@ -1,9 +1,10 @@
+import type { FC, SVGProps } from "react";
 import type { SidbarItemVariant } from "../ui/SidebarItem/const";
 
 export interface ISidebarItem {
   href: string;
   label: string;
-  icon: string;
+  icon: FC<SVGProps<SVGSVGElement>>;
   variant?: SidbarItemVariant
 }
 

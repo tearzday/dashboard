@@ -9,7 +9,7 @@ export const SidebarSection = ({title, items}: ISidebarSection) => {
     <div className={cls.section}>
         <Typography theme={TypographyTheme.ADDITIONAL}>{title}</Typography>
         {
-            items.map((item) => <SidebarItem href={item.href} icon={item.icon} label={item.label} variant={item.variant}/>)
+            items.map((item) => <SidebarItem key={item.href} href={item.href} icon={item.icon} label={item.label} variant={item.variant}/>)
         }
     </div>
   )
