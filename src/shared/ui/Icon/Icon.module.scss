@@ -1,0 +1,46 @@
+.icon {
+    position: relative;
+    color: $color-icon-default;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $rounded-full;
+    border: 1px solid $color-border;
+}
+
+.circle-accent {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $rounded-full;
+    background-color: $color-gray;
+    color: $color-accent;
+}
+
+.circle-black {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $rounded-full;
+    border: 1px solid $color-border;
+    color: $color-secondary;
+}
+
+.badge {
+    width: 8px;
+    height: 8px;
+    background-color: $color-accent;
+    border-radius: $rounded-full;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
