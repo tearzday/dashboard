@@ -1,7 +1,7 @@
-import IconCalendar from '@/shared/assets/icons/calendar.svg'
-import IconOffers from'@/shared/assets/icons/offers.svg'
-import IconFinance from '@/shared/assets/icons/finance.svg'
-import IconMedia from '@/shared/assets/icons/media.svg'
+import IconCalendar from '@/shared/assets/icons/calendar.svg?react'
+import IconOffers from'@/shared/assets/icons/offers.svg?react'
+import IconFinance from '@/shared/assets/icons/finance.svg?react'
+import IconMedia from '@/shared/assets/icons/media.svg?react'
 import type { FilterItem } from './types'
 
 
@@ -9,7 +9,6 @@ export const FilterList: FilterItem[] = [
     {
         key: 'date',
         label: 'Выберите дату',
-        icon: IconCalendar,
         options: [ 
             {
                 label: "20.11.2025",
@@ -28,26 +27,24 @@ export const FilterList: FilterItem[] = [
     {
         key: 'offers',
         label: 'Вcе офферы',
-        icon: IconOffers,
         options: [ 
             {
-                label: "оффер",
-                value: "оффер"
+                label: "оффер1",
+                value: "оффер1"
             },
             {
-                label: "оффер",
-                value: "оффер"
+                label: "оффер2",
+                value: "оффер2"
             },
             {
-                label: "оффер",
-                value: "оффер"
+                label: "оффер3",
+                value: "оффер3"
             }
         ]
     },
         {
         key: 'currency',
         label: 'USD',
-        icon: IconFinance,
         options: [ 
             {
                 label: "USD",
@@ -63,10 +60,9 @@ export const FilterList: FilterItem[] = [
             }
         ]
     },
-        {
+    {
         key: 'platforms',
         label: 'Все площадки',
-        icon: IconMedia,
         options: [ 
             {
                 label: "GoogleAds",
@@ -83,3 +79,10 @@ export const FilterList: FilterItem[] = [
         ]
     }
 ]
+
+export const iconMap = {
+  date: IconCalendar,
+  offers: IconOffers,
+  currency: IconFinance,
+  platforms: IconMedia,
+}

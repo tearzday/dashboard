@@ -1,16 +1,15 @@
-export interface FilterOption {
-  label: string;
-  value: string;
-}
+import type { SelectorOption } from "@/shared/types";
+import type { iconMap } from "./const";
 
 export interface FilterItem {
-  key: string;
+  key: IconKey;
   label: string;
-  icon: string;
-  options: FilterOption[];
+  options: SelectorOption[];
 }
 
 export interface CurrentFilter {
     key: string;
-    option: FilterOption
+    option: SelectorOption
 }
+
+export type IconKey = keyof typeof iconMap 
