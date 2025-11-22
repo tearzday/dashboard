@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { Typography } from '../Typography/Typography'
 import cls from './Selector.module.scss'
-import Arrow from '@/shared/assets/icons/arrow-selector.svg'
+import Arrow from '@/shared/assets/icons/arrow.svg'
 import type { SelectorOption } from '@/shared/types'
 
 interface SelectorProps {

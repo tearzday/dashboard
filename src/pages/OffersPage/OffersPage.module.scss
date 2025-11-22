@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.arrow {
+    transform: rotate(90deg);
+}

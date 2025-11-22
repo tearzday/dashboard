@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import cls from './Sidebar.module.scss'
 import { Devider, Logo } from '@/shared/ui';
 import { WalletList } from '@/entities/Wallets';
@@ -22,10 +22,10 @@ export const Sidebar = () => {
             {
               SidebarData.map((section, index) => {
                 return (
-                  <>
+                  <Fragment key={section.title}>
                     <SidebarSection title={section.title} items={section.items}/>
                     {index < SidebarData.length - 1 && <Devider />}
-                  </>
+                  </Fragment>
                 )
               })
             }
