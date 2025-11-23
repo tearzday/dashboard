@@ -20,20 +20,6 @@ export interface PlatformsData {
     color: string;
 }
 
-export interface MetricData {
-    value: number,
-    change: number,
-    changeType: 'increase' | 'decrease',
-    previousValue: number
-}
-
-export interface MetricsData {
-    expenses: MetricData,
-    click: MetricData,
-    cpa: MetricData,
-    cpc: MetricData
-}
-
 export interface CardInfoItem {
     title: string,
     value: string,

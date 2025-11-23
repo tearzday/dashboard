@@ -1,4 +1,3 @@
-export { CardMetric } from './CardMetric/CardMetric'
 export { Typography } from './Typography/Typography'
 export { TypographyTheme, TypographyVariant, TypographyWeight } from './Typography/const'
 export { Selector } from './Selector/Selector'

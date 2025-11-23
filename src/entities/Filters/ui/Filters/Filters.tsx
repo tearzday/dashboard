@@ -2,7 +2,7 @@ import { Selector } from '@/shared/ui'
 import cls from './Filters.module.scss'
 import { useAppDispatch, useAppSelector } from '@/app/hooks'
 import { setCurrentFilter } from '../../slice/FilterSlice'
-import { useEffect, type FC, type SVGProps } from 'react'
+import { useEffect } from 'react'
 import { iconMap } from '../../model/const'
 
 export const Filters = () => {
@@ -20,7 +20,7 @@ export const Filters = () => {
     <div className={cls.list}>
       {
         filterList.map(item => {
-          const IconComponent = iconMap[item.key] as FC<SVGProps<SVGSVGElement>>
+          const IconComponent = iconMap[item.key]
 
           return (
           <Selector 

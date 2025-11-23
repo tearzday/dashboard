@@ -1,4 +1,5 @@
 
+import { MetricsList } from '@/entities/Metrics'
 import { useGetDashboardDataQuery } from '../../services/getDashboardData'
 
 export function OffersDashboard() {
@@ -13,7 +14,7 @@ export function OffersDashboard() {
         <>Loading...</>
       ) : data ? (
         <>
-            {data.currentMetrics.expenses.change}
+            <MetricsList />
         </>
       ) : null}
     </div>
