@@ -9,7 +9,6 @@ interface PlatformCellProps {
 
 export const PlatformCell = ({id}: PlatformCellProps) => {
     const [checked, setChecked] = useState<boolean>(false)
-    console.log(id)
       
   return (
     <div className={cls.container}>

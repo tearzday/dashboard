@@ -13,7 +13,6 @@ export const OfferCell = ({id, name}: OfferCellProps) => {
   const checkedItems = useAppSelector(state => state.offersCheckbox.checkedItems)
   const dispatch = useAppDispatch()
 
-  console.log(id)
   return (
     <div className={cls.container}>
         <Checkbox checked={!!checkedItems[id]} onChange={(checked: boolean) => dispatch(setCheckedItem({ id, value: checked }))}/>

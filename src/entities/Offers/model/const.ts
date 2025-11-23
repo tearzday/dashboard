@@ -14,7 +14,7 @@ export const TableHeaderOffer: TableHeader[] = [
         checkbox: true,
     },
     {
-        key: "platfroms",
+        key: "platforms",
         label: "Площадки",
     },
     {
@@ -37,7 +37,7 @@ export const TableHeaderOffer: TableHeader[] = [
 
 export const TableHeaderPlatforms: TableHeader[] = [
     {
-        key: "platfroms",
+        key: "platforms",
         label: "Площадки",
     },
     {
