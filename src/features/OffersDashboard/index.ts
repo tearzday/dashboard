@@ -1,0 +1,1 @@
+export { OffersDashboard } from './ui/OffersDashboard/OffersDashboard'
