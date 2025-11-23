@@ -1,4 +1,23 @@
 .cell {
     border: 1px solid $color-border;
-    padding: 10px 12px;
+}
+
+th {
+    padding: 24px;
+}
+
+td {
+    padding: 16px 24px;
+}
+
+.container {
+    display: flex;
+    gap: 12px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
 }

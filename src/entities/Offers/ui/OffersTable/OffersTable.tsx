@@ -7,14 +7,16 @@ import { moneyConverter } from '@/shared/utils/moneyConverter'
 import { StatusCell } from './StatusCell/StatusCell'
 import { PlatformsCell } from './PlatformsCell/PlatformsCell'
 import { OfferCell } from './OfferCell/OfferCell'
-import { useDispatch } from 'react-redux'
 import { setOffers, sortOffers } from '../../slice/sortSlice'
-import { useAppSelector } from '@/app/hooks'
+import { useAppDispatch, useAppSelector } from '@/app/hooks'
+import { toggleAll } from '../../slice/offersCheckboxSlice'
 
 export const OffersTable= () => {
   const { data } = useGetDashboardDataQuery();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const offers = useAppSelector((state) => state.offersSort.offers);
+  const checkedItems = useAppSelector(state => state.offersCheckbox.checkedItems)
+
   
   useEffect(() => {
     if (data?.offers) {
@@ -25,6 +27,12 @@ export const OffersTable= () => {
   const sorted = (key: string) => {
     dispatch(sortOffers(key));
   };
+
+  const checked = Object.values(checkedItems).length > 0 && Object.values(checkedItems).every(Boolean);
+
+  const checkedAll = (value: boolean) => {
+    dispatch(toggleAll({ ids: offers.map(item => item.id), value }))
+  }
 
   const offersData = useMemo(() => {
     if (!offers) return [];
@@ -39,5 +47,5 @@ export const OffersTable= () => {
     ]);
   }, [offers]);
 
-  return <Table header={TableHeaderOffer} data={offersData} headerClick={sorted}/>
+  return <Table header={TableHeaderOffer} data={offersData} headerClick={sorted} chekedAll={checked} setCheckedAll={checkedAll}/>
 }

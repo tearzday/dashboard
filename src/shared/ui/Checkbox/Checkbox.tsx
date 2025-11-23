@@ -2,7 +2,7 @@ import type { FC } from "react";
 import cls from "./Checkbox.module.scss";
 
 interface CheckboxProps {
-  checked: boolean;
+  checked?: boolean;
   onChange: (checked: boolean) => void;
   disabled?: boolean;
 }

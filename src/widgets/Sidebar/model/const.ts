@@ -57,12 +57,12 @@ const OffersData: ISidebarSection = {
     title: 'ОФФЕРЫ',
     items: [
         {
-            href: '/',
+            href: '/fff',
             label: 'Стулья 2.0',
             icon: OffersIcon
         },
         {
-            href: '/offers',
+            href: '/fff',
             label: 'Продажа мебели',
             icon: OffersIcon
         }

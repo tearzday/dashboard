@@ -2,22 +2,24 @@ import type { TableHeader } from "@/shared/types";
 import cls from './Table.module.scss'
 import { TableCell } from "./TableCell/TableCell";
 import { TableRow } from "./TableRow/TableRow";
-import type { ReactNode } from "react";
+import { type ReactNode } from "react";
 
 
 interface TabelProps {
     header: TableHeader[];
     data: ReactNode[][];
-    headerClick?: (key: string) => void
+    headerClick?: (key: string) => void;
+    chekedAll?: boolean;
+    setCheckedAll?: (checked: boolean) => void;
 }
 
-export const Table = ({header, data, headerClick}: TabelProps) => {
-  return (
+export const Table = ({header, data, headerClick, chekedAll, setCheckedAll}: TabelProps) => {
+    return (
     <table className={cls.table}>
       <thead className={cls.thead}>
         <TableRow>
             {header.map((col) => (
-                <TableCell key={col.key} id={col.key} isHeader checkbox={col.checkbox} onClick={headerClick}>{col.label}</TableCell>
+                <TableCell key={col.key} id={col.key} isHeader checkbox={col.checkbox} onClick={headerClick} checked={chekedAll} setChecked={setCheckedAll}>{col.label}</TableCell>
             ))}
         </TableRow>
       </thead>
