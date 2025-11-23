@@ -12,7 +12,7 @@ export const PlatformsCell = ({platforms}: PlatformsCellProps) => {
   return (
     <div className={cls.container}>
     {
-        platforms.map(platform => <Icon icon={platformIconsMap[platform.id]} variant={IconVariant.CIRCLE}/>)
+        platforms.map(platform => <Icon key={platform.id} icon={platformIconsMap[platform.id]} variant={IconVariant.CIRCLE}/>)
     }
     </div>
   )

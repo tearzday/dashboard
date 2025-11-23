@@ -13,7 +13,7 @@ export const CardInfo = () => {
         </div>
         <ul className={cls.card__list}>
             {
-                CardInfoData.map(item => <CardItem title={item.title} value={item.value}/>)
+                CardInfoData.map(item => <CardItem key={item.title} title={item.title} value={item.value}/>)
             }
         </ul>
     </div>

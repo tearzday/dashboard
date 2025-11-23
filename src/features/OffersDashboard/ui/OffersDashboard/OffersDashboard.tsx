@@ -6,9 +6,8 @@ import { OffersSection } from '@/entities/Offers'
 export function OffersDashboard() {
   const { data, error, isLoading } = useGetDashboardDataQuery()
 
-  console.log(data)
   return (
-    <div className="App">
+    <>
       {error ? (
         <>Error</>
       ) : isLoading ? (
@@ -19,6 +18,6 @@ export function OffersDashboard() {
             <OffersSection />
         </>
       ) : null}
-    </div>
+    </>
   )
 }

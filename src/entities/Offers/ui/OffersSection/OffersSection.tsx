@@ -16,13 +16,11 @@ export const OffersSection = () => {
             <Typography variant={TypographyVariant.H2}>Офферы</Typography>
             <Selector selectorKey='export' icon={ExportIcon} placeholder='Экспорт' options={[]} onChange={(key, option) => dispatch(setCurrentFilter({ key, option }))}/>
         </div>
-        <div className={cls.content}>
-            <OffersTable />
-            <div className={cls.row}>
-              <CardInfo />
-              <PlatformsTable />
-            </div>
-        </div>
+          <OffersTable />
+          <div className={cls.row}>
+            <CardInfo />
+            <PlatformsTable />
+          </div> 
     </div>
   )
 }

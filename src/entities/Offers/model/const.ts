@@ -9,16 +9,16 @@ import type { PlatformData } from "./types";
 
 export const TableHeaderOffer: TableHeader[] = [
     {
-        key: "offer-name",
+        key: "name",
         label: "Название оффера",
         checkbox: true,
     },
     {
-        key: "platfroms",
+        key: "platforms",
         label: "Площадки",
     },
     {
-        key: "date-start",
+        key: "launchDate",
         label: "Дата запуска",
     },
     {
@@ -26,7 +26,7 @@ export const TableHeaderOffer: TableHeader[] = [
         label: "Баланс",
     },
     {
-        key: "spend",
+        key: "spent",
         label: "Расход",
     },
     {
@@ -37,7 +37,7 @@ export const TableHeaderOffer: TableHeader[] = [
 
 export const TableHeaderPlatforms: TableHeader[] = [
     {
-        key: "platfroms",
+        key: "platforms",
         label: "Площадки",
     },
     {
@@ -49,11 +49,11 @@ export const TableHeaderPlatforms: TableHeader[] = [
         label: "Аккаунтов",
     },
     {
-        key: "avg-cpc",
+        key: "avgcpc",
         label: "AVG CPC",
     },
     {
-        key: "avg-cpa",
+        key: "avgcpa",
         label: "AVG CPA",
     },
 ]

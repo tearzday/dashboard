@@ -8,15 +8,16 @@ import type { ReactNode } from "react";
 interface TabelProps {
     header: TableHeader[];
     data: ReactNode[][];
+    headerClick?: (key: string) => void
 }
 
-export const Table = ({header, data}: TabelProps) => {
+export const Table = ({header, data, headerClick}: TabelProps) => {
   return (
     <table className={cls.table}>
       <thead className={cls.thead}>
         <TableRow>
             {header.map((col) => (
-                <TableCell key={col.key} isHeader checkbox={col.checkbox}>{col.label}</TableCell>
+                <TableCell key={col.key} id={col.key} isHeader checkbox={col.checkbox} onClick={headerClick}>{col.label}</TableCell>
             ))}
         </TableRow>
       </thead>
