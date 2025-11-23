@@ -1,4 +1,4 @@
-import type { ISidebarSection } from "./type";
+import type { SidebarSectionType } from "./type";
 import GoogleIcon from "@/shared/assets/platforms/Google.svg?react"
 import TikTokIcon from "@/shared/assets/platforms/TikTok.svg?react"
 import MenuIcon from "@/shared/assets/icons/menu.svg?react"
@@ -7,7 +7,7 @@ import AccountsIcon from "@/shared/assets/icons/accounts.svg?react"
 import FinanceIcon from "@/shared/assets/icons/finance.svg?react"
 import { SidbarItemVariant } from "../ui/SidebarItem/const";
 
-const MenuData: ISidebarSection = {
+const MenuData: SidebarSectionType = {
     title: 'ОСНОВНОЕ МЕНЮ',
     items: [
         {
@@ -37,7 +37,7 @@ const MenuData: ISidebarSection = {
     ]
 }
 
-const AdvertisingSpacesData: ISidebarSection = {
+const AdvertisingSpacesData: SidebarSectionType = {
     title: 'РЕКЛАМНЫЕ ПЛОЩАДКИ',
     items: [
         {
@@ -53,7 +53,7 @@ const AdvertisingSpacesData: ISidebarSection = {
     ]
 }
 
-const OffersData: ISidebarSection = {
+const OffersData: SidebarSectionType = {
     title: 'ОФФЕРЫ',
     items: [
         {
@@ -69,4 +69,4 @@ const OffersData: ISidebarSection = {
     ]
 }
 
-export const SidebarData: ISidebarSection[] = [MenuData, AdvertisingSpacesData, OffersData]
+export const SidebarData: SidebarSectionType[] = [MenuData, AdvertisingSpacesData, OffersData]

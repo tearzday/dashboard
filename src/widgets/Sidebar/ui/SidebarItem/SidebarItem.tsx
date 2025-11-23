@@ -1,14 +1,14 @@
 import { Icon, Typography, TypographyTheme, TypographyVariant } from '@/shared/ui'
 import cls from './SidebarItem.module.scss'
-import type { ISidebarItem } from '../../model/type';
+import type { SidebarItemType } from '../../model/type';
 import { SidbarItemVariant } from './const';
 import { NavLink } from 'react-router';
 
-interface ISidebarItemProps extends ISidebarItem {
+interface SidebarItemTypeProps extends SidebarItemType {
     variant?: SidbarItemVariant
 }
 
-export const SidebarItem = ({href, label, icon, variant = SidbarItemVariant.MEDIUM}: ISidebarItemProps) => {
+export const SidebarItem = ({href, label, icon, variant = SidbarItemVariant.MEDIUM}: SidebarItemTypeProps) => {
   return (
     <NavLink to={href} className={({ isActive }: { isActive: boolean }) => `${cls.item} ${cls[variant]} ${isActive ? cls.active : ""}`}>
         {({ isActive }: { isActive: boolean }) => (

@@ -1,9 +1,9 @@
 import { Typography, TypographyTheme } from "@/shared/ui"
 import { SidebarItem } from "../SidebarItem/SidebarItem"
 import cls from './SidebarSection.module.scss'
-import type { ISidebarSection } from "../../model/type"
+import type { SidebarSectionType } from "../../model/type"
 
-export const SidebarSection = ({title, items}: ISidebarSection) => {
+export const SidebarSection = ({title, items}: SidebarSectionType) => {
 
   return (
     <div className={cls.section}>
