@@ -1,4 +1,4 @@
-import { type FC, type PropsWithChildren } from 'react';
+import { memo, type FC, type PropsWithChildren } from 'react';
 import cls from './TableCell.module.scss'
 import SortIcon from '@/shared/assets/icons/sort-icon.svg'
 import { Typography } from '../../Typography/Typography';
@@ -14,7 +14,7 @@ interface TableCellProps {
     setChecked?: (checked: boolean) => void;
 }
 
-export const TableCell: FC<PropsWithChildren<TableCellProps>> = ({children, id, isHeader = false, onClick, checkbox, checked, setChecked}) => {
+export const TableCellComponent: FC<PropsWithChildren<TableCellProps>> = ({children, id, isHeader = false, onClick, checkbox, checked, setChecked}) => {
   const CellTag = isHeader ? 'th' : 'td';
 
   return (
@@ -32,3 +32,5 @@ export const TableCell: FC<PropsWithChildren<TableCellProps>> = ({children, id, 
     </CellTag>
   )
 }
+
+export const TableCell = memo(TableCellComponent)

@@ -1,4 +1,4 @@
-import type { FC, SVGProps } from 'react';
+import { memo, type FC, type SVGProps } from 'react';
 import cls from './Icon.module.scss'
 import { IconVariant } from './const';
 
@@ -10,7 +10,7 @@ interface IconProps{
   onClick?: () => void;
 }
 
-export const Icon = ({icon: IconTag, variant, badge, className, onClick}: IconProps) => {
+export const IconComponent = ({icon: IconTag, variant, badge, className, onClick}: IconProps) => {
   return (
     <div className={`${cls.icon} ${variant ? cls[variant] : ''} ${className ? className : ''}`} onClick={onClick}>
         {badge && <div className={cls.badge}/>}
@@ -18,3 +18,5 @@ export const Icon = ({icon: IconTag, variant, badge, className, onClick}: IconPr
     </div>
   )
 }
+
+export const Icon = memo(IconComponent)

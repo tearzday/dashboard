@@ -2,7 +2,7 @@ import { Table, Typography, TypographyVariant } from '@/shared/ui'
 import { useGetDashboardDataQuery } from '@/features/OffersDashboard/services/getDashboardData'
 import { TableHeaderOffer } from '../../model/const'
 import { StatusBadgeType } from '@/shared/ui/StatusBadge/const'
-import { useEffect, useMemo } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import { moneyConverter } from '@/shared/utils/moneyConverter'
 import { StatusCell } from './StatusCell/StatusCell'
 import { PlatformsCell } from './PlatformsCell/PlatformsCell'
@@ -24,15 +24,16 @@ export const OffersTable= () => {
     }
   }, []);
 
-  const sorted = (key: string) => {
-    dispatch(sortOffers(key));
-  };
+    const sorted = useCallback(
+      (key: string) => {dispatch(sortOffers(key))},
+      [dispatch]
+    );
 
   const checked = Object.values(checkedItems).length > 0 && Object.values(checkedItems).every(Boolean);
 
-  const checkedAll = (value: boolean) => {
+  const checkedAll = useCallback((value: boolean) => {
     dispatch(toggleAll({ ids: offers.map(item => item.id), value }))
-  }
+  }, [dispatch, offers])
 
   const offersData = useMemo(() => {
     if (!offers) return [];
