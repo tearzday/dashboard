@@ -1,4 +1,4 @@
-import { Table } from '@/shared/ui'
+import { Table, Typography, TypographyVariant } from '@/shared/ui'
 import { useGetDashboardDataQuery } from '@/features/OffersDashboard/services/getDashboardData'
 import { TableHeaderOffer } from '../../model/const'
 import { StatusBadgeType } from '@/shared/ui/StatusBadge/const'
@@ -17,9 +17,9 @@ export const OffersTable= () => {
     return data.offers.map((offer) => [
       <OfferCell name={offer.name} id={offer.id}/>,
       <PlatformsCell platforms={offer.platforms}/>,
-      new Date(offer.launchDate).toLocaleDateString("ru-RU"),
-      moneyConverter(offer.balance),
-      moneyConverter(offer.spent),
+      <Typography variant={TypographyVariant.BODY1}>{new Date(offer.launchDate).toLocaleDateString("ru-RU")}</Typography>,
+      <Typography variant={TypographyVariant.BODY1}>{moneyConverter(offer.balance)}</Typography>,
+      <Typography variant={TypographyVariant.BODY1}>{moneyConverter(offer.spent)}</Typography>,
         <StatusCell status={offer.status as StatusBadgeType}/>
     ]);
   }, [data]);

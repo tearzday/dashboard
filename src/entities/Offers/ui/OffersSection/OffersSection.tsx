@@ -4,6 +4,8 @@ import ExportIcon from '@/shared/assets/icons/export.svg?react'
 import { useAppDispatch } from '@/app/hooks'
 import { setCurrentFilter } from '@/entities/Filters/slice/FilterSlice'
 import { OffersTable } from '../OffersTable/OffersTable'
+import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
+import { PlatformsTable } from '../PlatformsTable/PlatformsTable'
 
 export const OffersSection = () => {
   const dispatch = useAppDispatch()
@@ -14,8 +16,12 @@ export const OffersSection = () => {
             <Typography variant={TypographyVariant.H2}>Офферы</Typography>
             <Selector selectorKey='export' icon={ExportIcon} placeholder='Экспорт' options={[]} onChange={(key, option) => dispatch(setCurrentFilter({ key, option }))}/>
         </div>
-        <div>
+        <div className={cls.content}>
             <OffersTable />
+            <div className={cls.row}>
+              <CardInfo />
+              <PlatformsTable />
+            </div>
         </div>
     </div>
   )

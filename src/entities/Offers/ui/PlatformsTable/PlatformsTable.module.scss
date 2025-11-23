@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    background-color: $color-primary;
+    border: 1px solid $color-border;
+    border-radius: $rounded-md;
+}

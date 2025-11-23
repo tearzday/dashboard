@@ -41,12 +41,12 @@
                 },
                 {
                     "id": "google",
-                    "name": "Яндекс.Директ",
+                    "name": "Google",
                     "color": "#FC3F1D"
                 },
                 {
                     "id": "huaweiads",
-                    "name": "Авито",
+                    "name": "Huawei Ads",
                     "color": "#00AAFF"
                 }
             ]

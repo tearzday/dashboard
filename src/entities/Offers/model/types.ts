@@ -13,3 +13,12 @@ export interface OfferData {
     spent: number;
     platforms: PlatformsData[];
 }
+
+export interface PlatformData {
+  id: string;
+  name: string;
+  balance: number;
+  accounts: number;
+  avgcpc: number;
+  avgcpa: number;
+}
