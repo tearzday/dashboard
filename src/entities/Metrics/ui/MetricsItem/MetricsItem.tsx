@@ -6,7 +6,7 @@ import type { FC, SVGProps } from 'react';
 
 interface MetricsItemProps {
     title: string;
-    value: number;
+    value: string;
     change: string;
     changeType: 'increase' | 'decrease',
     icon: FC<SVGProps<SVGSVGElement>>

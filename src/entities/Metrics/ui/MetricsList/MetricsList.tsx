@@ -3,6 +3,7 @@ import { useGetDashboardDataQuery } from '@/features/OffersDashboard/services/ge
 import cls from './MetricsList.module.scss'
 import { iconMetricsMap, titleMap } from '../../model/const';
 import type { MetricKeys } from '../../model/types';
+import { moneyConverter } from '@/shared/utils/moneyConverter';
 
 
 export const MetricsList = () => {
@@ -18,8 +19,9 @@ export const MetricsList = () => {
                     const IconComponent = iconMetricsMap[typedKey]
                     const title = titleMap[typedKey]
                     const changeValue = key == 'expenses' || key == 'clicks' ? `${change}%` : change;
-                    
-                    return <MetricsItem icon={IconComponent} key={key} title={title} change={changeValue} changeType={changeType} value={value}/>
+                    const currentValue = key === "expenses" ? moneyConverter(value) : key === "cpa" ? moneyConverter(value, "postfix") : value;
+                     
+                    return <MetricsItem icon={IconComponent} key={key} title={title} change={changeValue} changeType={changeType} value={currentValue}/>
                 })
             }
         </div>
