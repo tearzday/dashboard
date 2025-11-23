@@ -1,6 +1,7 @@
 
 import { MetricsList } from '@/entities/Metrics'
 import { useGetDashboardDataQuery } from '../../services/getDashboardData'
+import { OffersSection } from '@/entities/Offers'
 
 export function OffersDashboard() {
   const { data, error, isLoading } = useGetDashboardDataQuery()
@@ -15,6 +16,7 @@ export function OffersDashboard() {
       ) : data ? (
         <>
             <MetricsList />
+            <OffersSection />
         </>
       ) : null}
     </div>

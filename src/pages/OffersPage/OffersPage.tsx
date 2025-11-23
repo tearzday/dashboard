@@ -7,7 +7,7 @@ import { setCurrentFilter } from '@/entities/Filters/slice/FilterSlice'
 import ExportIcon from '@/shared/assets/icons/export.svg?react'
 import { OffersDashboard } from '@/features/OffersDashboard'
 export const OffersPage = () => {
-    const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch()
 
   return (
     <div className={cls.page}>

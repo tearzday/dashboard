@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type FC, type SVGProps } from 'react'
 import { Typography } from '../Typography/Typography'
 import cls from './Selector.module.scss'
-import Arrow from '@/shared/assets/icons/arrow.svg'
+import IconArrow from '@/shared/assets/icons/arrow.svg?react'
 import type { SelectorOption } from '@/shared/types'
 import { Icon } from '../Icon/Icon'
 
@@ -36,7 +36,7 @@ export const Selector = ({selectorKey, placeholder, icon, options, onChange}: Se
         <div className={cls.button} onClick={() => setOpen(prev => !prev)} ref={buttonRef} style={{ width }}>
             <Icon icon={icon}/>
             <Typography>{value ? value.label : placeholder}</Typography>
-            <img src={Arrow} alt='Arrow icon'/>
+            <Icon icon={IconArrow}/>
         </div>
 
         {open && (

@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid $color-border;
+    padding: 24px;
+    border-radius: $rounded-xl;
+    background-color: $color-primary;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}

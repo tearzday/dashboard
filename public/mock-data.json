@@ -35,17 +35,17 @@
             "spent": 15423.00,
             "platforms": [
                 {
-                    "id": "google",
+                    "id": "googleads",
                     "name": "Google Ads",
                     "color": "#4285F4"
                 },
                 {
-                    "id": "yandex",
+                    "id": "google",
                     "name": "Яндекс.Директ",
                     "color": "#FC3F1D"
                 },
                 {
-                    "id": "avito",
+                    "id": "huaweiads",
                     "name": "Авито",
                     "color": "#00AAFF"
                 }
@@ -81,7 +81,7 @@
             "platforms": [
                 {
                     "id": "google",
-                    "name": "Google Ads",
+                    "name": "Google",
                     "color": "#4285F4"
                 },
                 {
@@ -101,7 +101,7 @@
             "platforms": [
                 {
                     "id": "google",
-                    "name": "Google Ads",
+                    "name": "Google",
                     "color": "#4285F4"
                 },
                 {
@@ -110,8 +110,8 @@
                     "color": "#0077FF"
                 },
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
+                    "id": "telegram",
+                    "name": "Телеграм",
                     "color": "#FC3F1D"
                 }
             ]
@@ -125,13 +125,13 @@
             "spent": 12300.00,
             "platforms": [
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
+                    "id": "vk",
+                    "name": "VK Реклама",
                     "color": "#FC3F1D"
                 },
                 {
-                    "id": "avito",
-                    "name": "Авито",
+                    "id": "tiktok",
+                    "name": "TikTok Ads",
                     "color": "#00AAFF"
                 }
             ]
@@ -165,14 +165,14 @@
             "spent": 48900.00,
             "platforms": [
                 {
-                    "id": "google",
+                    "id": "googleads",
                     "name": "Google Ads",
                     "color": "#4285F4"
                 },
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
-                    "color": "#FC3F1D"
+                    "id": "google",
+                    "name": "Google",
+                    "color": "#4285F4"
                 },
                 {
                     "id": "vk",
@@ -190,9 +190,9 @@
             "spent": 9800.00,
             "platforms": [
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
-                    "color": "#FC3F1D"
+                    "id": "vk",
+                    "name": "VK Реклама",
+                    "color": "#0077FF"
                 },
                 {
                     "id": "google",
@@ -210,9 +210,9 @@
             "spent": 15200.00,
             "platforms": [
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
-                    "color": "#FC3F1D"
+                    "id": "vk",
+                    "name": "VK Реклама",
+                    "color": "#0077FF"
                 }
             ]
         },
@@ -224,14 +224,14 @@
             "balance": 18000.00,
             "spent": 12500.00,
             "platforms": [
-                {
-                    "id": "avito",
-                    "name": "Авито",
-                    "color": "#00AAFF"
+              {
+                    "id": "vk",
+                    "name": "VK Реклама",
+                    "color": "#0077FF"
                 },
                 {
-                    "id": "yandex",
-                    "name": "Яндекс.Директ",
+                    "id": "telegram",
+                    "name": "Телеграм",
                     "color": "#FC3F1D"
                 }
             ]
