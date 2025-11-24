@@ -1,7 +1,7 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { OfferData } from "../model/types";
+import type { SortOrder } from "@/shared/types";
 
-export type SortOrder = "asc" | "desc";
 
 interface OffersState {
   offers: OfferData[];

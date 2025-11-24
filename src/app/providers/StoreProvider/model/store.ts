@@ -1,13 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
 import filterReducer from '@/entities/Filters/slice/FilterSlice'
 import { dashboardApi } from '@/features/OffersDashboard/services/getDashboardData'
-import sortReducer from '@/entities/Offers/slice/sortSlice'
+import sortOffersReducer from '@/entities/Offers/slice/sortOffersSlice'
+import sortPlatformsReducer from '@/entities/Offers/slice/sortPlatformsSlice'
 import offersCheckboxReducer from '@/entities/Offers/slice/offersCheckboxSlice'
 
 export const store = configureStore({
   reducer: {
     filter: filterReducer,
-    offersSort: sortReducer,
+    offersSort: sortOffersReducer,
+    platformsSort: sortPlatformsReducer,
     offersCheckbox: offersCheckboxReducer,
     [dashboardApi.reducerPath]: dashboardApi.reducer,
   },

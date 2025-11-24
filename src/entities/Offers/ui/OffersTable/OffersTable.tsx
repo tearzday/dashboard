@@ -7,7 +7,7 @@ import { moneyConverter } from '@/shared/utils/moneyConverter'
 import { StatusCell } from './StatusCell/StatusCell'
 import { PlatformsCell } from './PlatformsCell/PlatformsCell'
 import { OfferCell } from './OfferCell/OfferCell'
-import { setOffers, sortOffers } from '../../slice/sortSlice'
+import { setOffers, sortOffers } from '../../slice/sortOffersSlice'
 import { useAppDispatch, useAppSelector } from '@/app/hooks'
 import { toggleAll } from '../../slice/offersCheckboxSlice'
 
@@ -24,10 +24,10 @@ export const OffersTable= () => {
     }
   }, []);
 
-    const sorted = useCallback(
-      (key: string) => {dispatch(sortOffers(key))},
-      [dispatch]
-    );
+  const sorted = useCallback(
+    (key: string) => {dispatch(sortOffers(key))},
+    [dispatch]
+  );
 
   const checked = offers.length > 0 && offers.every(offer => checkedItems[offer.id]);
 
