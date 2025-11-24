@@ -1,9 +1,11 @@
 import { Fragment, useState } from 'react'
 import cls from './Sidebar.module.scss'
-import { Devider, Logo } from '@/shared/ui';
+import { Devider, Icon, IconVariant, Logo, Typography } from '@/shared/ui';
 import { WalletList } from '@/entities/Wallets';
 import { SidebarSection } from '../SidebarSection/SidebarSection';
 import { SidebarData } from '../../model/const';
+import ArrowIcon from '@/shared/assets/icons/arrow.svg?react'
+import ExitIcon from '@/shared/assets/icons/exit.svg'
 
 export const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -29,7 +31,13 @@ export const Sidebar = () => {
                 )
               })
             }
-            <button onClick={toggleSidebar}>Toggle</button>
+        </div>
+        <div className={cls.footer}>
+            <div className={cls.exit}>
+              <img src={ExitIcon} alt='Exit icon'/>
+              <Typography>Выйти</Typography>
+            </div>
+            <Icon className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`} icon={ArrowIcon} variant={IconVariant.ACCENT} onClick={toggleSidebar}/>
         </div>
     </aside>
   )
