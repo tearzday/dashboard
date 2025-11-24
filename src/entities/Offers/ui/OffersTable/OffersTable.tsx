@@ -29,7 +29,7 @@ export const OffersTable= () => {
       [dispatch]
     );
 
-  const checked = Object.values(checkedItems).length > 0 && Object.values(checkedItems).every(Boolean);
+  const checked = offers.length > 0 && offers.every(offer => checkedItems[offer.id]);
 
   const checkedAll = useCallback((value: boolean) => {
     dispatch(toggleAll({ ids: offers.map(item => item.id), value }))
