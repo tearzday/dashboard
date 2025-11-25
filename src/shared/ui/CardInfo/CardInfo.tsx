@@ -3,10 +3,11 @@ import cls from './CardInfo.module.scss'
 import { CardInfoData } from '@/shared/const'
 import { Typography } from '../Typography/Typography'
 import { TypographyTheme, TypographyVariant, TypographyWeight } from '../Typography/const'
+import { Card } from '../Card/Card'
 
 export const CardInfo = () => {
   return (
-    <div className={cls.card}>
+    <Card className={cls.card}>
         <div className={cls.card__header}>
             <Typography variant={TypographyVariant.H2}>Баланс</Typography>
             <Typography variant={TypographyVariant.H2} theme={TypographyTheme.ACCENT}>$ 150 345.00</Typography>
@@ -16,7 +17,7 @@ export const CardInfo = () => {
                 CardInfoData.map(item => <CardItem key={item.title} title={item.title} value={item.value}/>)
             }
         </ul>
-    </div>
+    </Card>
   )
 }
 

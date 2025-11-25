@@ -1,0 +1,17 @@
+.card {
+    border: 1px solid $color-border;
+    padding: 24px;
+    background-color: $color-primary;
+
+    @media (max-width: $breakpoints-2xl) {
+        padding: 18px;
+    }
+}
+
+.rounded-xxl {
+    border-radius: $rounded-xxl;
+}
+
+.rounded-md {
+    border-radius: $rounded-md;
+}

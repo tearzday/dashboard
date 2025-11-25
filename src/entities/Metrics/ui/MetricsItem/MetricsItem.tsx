@@ -1,7 +1,7 @@
 import cls from './MetricsItem.module.scss'
 import increaseIcon from '@/shared/assets/icons/increase.svg'
 import decreaseIcon from '@/shared/assets/icons/decrease.svg'
-import { Icon, IconVariant, Typography, TypographyTheme, TypographyVariant, TypographyWeight } from '@/shared/ui';
+import { Card, CardRounded, Icon, IconVariant, Typography, TypographyTheme, TypographyVariant, TypographyWeight } from '@/shared/ui';
 import type { FC, SVGProps } from 'react';
 
 interface MetricsItemProps {
@@ -16,7 +16,7 @@ export const MetricsItem = ({title, value, change, changeType, icon}: MetricsIte
   const changeIcon = changeType === 'increase' ? increaseIcon : decreaseIcon;
 
   return (
-    <div className={cls.card}>
+    <Card className={cls.card} rounded={CardRounded.XXL}>
         <div className={cls.card__header}>
             <Typography>{title}</Typography>
             <Icon icon={icon} variant={IconVariant.CIRCLE_ACCENT}/>
@@ -28,6 +28,6 @@ export const MetricsItem = ({title, value, change, changeType, icon}: MetricsIte
                 <img src={changeIcon} alt='Icon graph'/>
             </div>
         </div>
-    </div>
+    </Card>
   )
 }

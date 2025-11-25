@@ -1,4 +1,4 @@
-import { Table, Typography, TypographyVariant } from '@/shared/ui'
+import { Card, Table, Typography, TypographyVariant } from '@/shared/ui'
 import cls from './PlatformsTable.module.scss'
 import { TableHeaderPlatforms } from '../../model/const'
 import { useCallback, useMemo } from 'react'
@@ -31,9 +31,9 @@ export const PlatformsTable = () => {
 
   }, [platforms])
   return (
-    <div className={cls.container}>
+  <Card className={cls.container}>
         <Typography variant={TypographyVariant.H2}>Рекламные площадки</Typography>
         <Table header={TableHeaderPlatforms} headerClick={(sorted)} data={platformsData}/>
-    </div>
+    </Card>
   )
 }
