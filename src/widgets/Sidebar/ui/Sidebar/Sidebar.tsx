@@ -33,19 +33,20 @@ export const Sidebar = () => {
               {index < SidebarData.length - 1 && <Devider />}
             </Fragment>
           ))}
-        </div>
+
         <div className={`${cls.footer}`}>
           <div className={cls.exit}>
             <img src={ExitIcon} alt="Exit icon" />
             {collapsed && <Typography>Выйти</Typography>}
           </div>
-          <Icon
+        </div>
+      </div>
+                <Icon
             className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`}
             icon={ArrowIcon}
             variant={IconVariant.ACCENT}
             onClick={toggleSidebar}
           />
-        </div>
       </aside>
     </div>
   );

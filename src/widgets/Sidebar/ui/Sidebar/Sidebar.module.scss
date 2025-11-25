@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .container {
   width: auto;
 
@@ -19,7 +21,7 @@
   transition: width $transition;
   border-right: 1px solid $color-border;
   background-color: $color-primary;
-
+position: relative;
   @media (max-width: $breakpoints-xl) {
     width: 70px;
   }
@@ -87,21 +89,8 @@
 }
 
 .footer {
-  position: relative;
   width: 100%;
-  padding: 48px 16px;
-
-  @media (max-width: $breakpoints-xl) {
-    padding: 30px 10px;
-  }
-
-  @media (max-width: $breakpoints-md) {
-    padding: 20px 8px;
-  }
-
-  @media (max-width: $breakpoints-sm) {
-    padding: 8px;
-  }
+  margin-top: auto; 
 }
 
 .toggle-icon {
@@ -112,6 +101,10 @@
   cursor: pointer;
   transform: rotate(90deg);
   transition: transform $transition;
+
+  @media (max-width: $breakpoints-xl) {
+    right: -15px;
+  }
 
   @media (max-width: $breakpoints-md) {
     bottom: 70px;
@@ -147,7 +140,7 @@
 }
 
 .overlay {
-  background: transparentize($color-additional, 0.7);
+  background: color.adjust($color-additional, $alpha: -0.7);
   position: absolute;
   width: 100%;
   height: 100%;
