@@ -1,6 +1,5 @@
 import { Card, Typography, TypographyVariant, StatusBadge } from "@/shared/ui";
-import type { FC } from "react";
-import { PlatformsList } from "../PlatformsList/PlatformsList";
+import { Platforms } from "../Platforms/Platforms";
 import cls from "./OfferCard.module.scss";
 import type { OfferData } from "../../model/types";
 import { moneyConverter } from "@/shared/utils/moneyConverter";
@@ -9,12 +8,12 @@ export interface OfferCardProps {
   offer: OfferData;
 }
 
-export const OfferCard: FC<OfferCardProps> = ({ offer }) => {
+export const OfferCard = ({ offer }: OfferCardProps) => {
   return (
     <Card className={cls.card}>
       <Typography variant={TypographyVariant.H2}>{offer.name}</Typography>
       <StatusBadge status={offer.status} />
-      <PlatformsList platforms={offer.platforms} />
+      <Platforms platforms={offer.platforms} />
 
     <div className={cls.col}>
       <div className={cls.row}>

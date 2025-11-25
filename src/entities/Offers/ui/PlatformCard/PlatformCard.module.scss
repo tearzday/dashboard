@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

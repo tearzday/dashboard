@@ -8,6 +8,7 @@ import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
 import { PlatformsTable } from '../PlatformsTable/PlatformsTable'
 import { useEffect, useState } from 'react'
 import { OffersList } from '../OffersList/OffersList'
+import { PlatformsList } from '../PlatformsList/PlatformsList'
 
 export const OffersSection = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -27,10 +28,10 @@ export const OffersSection = () => {
             <Typography variant={TypographyVariant.H2}>Офферы</Typography>
             <Selector selectorKey='export' icon={ExportIcon} placeholder='Экспорт' options={[]} onChange={(key, option) => dispatch(setCurrentFilter({ key, option }))}/>
         </div>
-          {isMobile ? < OffersList />:<OffersTable />}
+          {isMobile ? < OffersList /> : <OffersTable />}
           <div className={cls.row}>
             <CardInfo />
-            <PlatformsTable />
+            {isMobile ? < PlatformsList /> : <PlatformsTable />}
           </div> 
     </Card>
   )

@@ -5,7 +5,7 @@ import { StatusBadgeType } from '@/shared/ui/StatusBadge/const'
 import { useCallback, useEffect, useMemo } from 'react'
 import { moneyConverter } from '@/shared/utils/moneyConverter'
 import { StatusCell } from './StatusCell/StatusCell'
-import { PlatformsList } from '../PlatformsList/PlatformsList'
+import { Platforms } from '../Platforms/Platforms'
 import { OfferCell } from './OfferCell/OfferCell'
 import { setOffers, sortOffers } from '../../slice/sortOffersSlice'
 import { useAppDispatch, useAppSelector } from '@/app/hooks'
@@ -40,7 +40,7 @@ export const OffersTable= () => {
 
     return offers.map((offer) => [
       <OfferCell name={offer.name} id={offer.id}/>,
-      <PlatformsList platforms={offer.platforms}/>,
+      <Platforms platforms={offer.platforms}/>,
       <Typography variant={TypographyVariant.BODY1}>{new Date(offer.launchDate).toLocaleDateString("ru-RU")}</Typography>,
       <Typography variant={TypographyVariant.BODY1}>{moneyConverter(offer.balance)}</Typography>,
       <Typography variant={TypographyVariant.BODY1}>{moneyConverter(offer.spent)}</Typography>,

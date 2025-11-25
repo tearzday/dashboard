@@ -30,6 +30,7 @@ export const PlatformsTable = () => {
     })
 
   }, [platforms])
+
   return (
   <Card className={cls.container}>
         <Typography variant={TypographyVariant.H2}>Рекламные площадки</Typography>

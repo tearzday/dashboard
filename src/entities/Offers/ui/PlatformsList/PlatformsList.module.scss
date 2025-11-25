@@ -1,8 +1,12 @@
 .container {
+    flex: 1;
     display: flex;
-    gap: 12px;
-    
-    @media (max-width: $breakpoints-2xl) {
-        gap: 6px;
-    }
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
