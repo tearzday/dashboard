@@ -34,19 +34,19 @@ export const Sidebar = () => {
             </Fragment>
           ))}
 
-        <div className={`${cls.footer}`}>
-          <div className={cls.exit}>
-            <img src={ExitIcon} alt="Exit icon" />
-            {collapsed && <Typography>Выйти</Typography>}
+          <div className={`${cls.footer}`}>
+            <div className={cls.exit}>
+              <img src={ExitIcon} alt="Exit icon" />
+              {collapsed && <Typography>Выйти</Typography>}
+            </div>
           </div>
         </div>
-      </div>
-                <Icon
-            className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`}
-            icon={ArrowIcon}
-            variant={IconVariant.ACCENT}
-            onClick={toggleSidebar}
-          />
+        <Icon
+          className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`}
+          icon={ArrowIcon}
+          variant={IconVariant.ACCENT}
+          onClick={toggleSidebar}
+        />
       </aside>
     </div>
   );

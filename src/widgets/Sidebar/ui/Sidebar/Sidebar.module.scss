@@ -1,4 +1,4 @@
-@use "sass:color";
+@use 'sass:color';
 
 .container {
   width: auto;
@@ -21,7 +21,7 @@
   transition: width $transition;
   border-right: 1px solid $color-border;
   background-color: $color-primary;
-position: relative;
+  position: relative;
   @media (max-width: $breakpoints-xl) {
     width: 70px;
   }
@@ -90,7 +90,7 @@ position: relative;
 
 .footer {
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .toggle-icon {
