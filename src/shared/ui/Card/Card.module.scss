@@ -2,14 +2,23 @@
     border: 1px solid $color-border;
     padding: 24px;
     background-color: $color-primary;
-
+    box-shadow: 0px 1px 8px 1px rgba(229, 229, 242, 0.64);
+    
     @media (max-width: $breakpoints-2xl) {
         padding: 18px;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        padding: 8px;
     }
 }
 
 .rounded-xxl {
     border-radius: $rounded-xxl;
+
+     @media (max-width: $breakpoints-sm) {
+            border-radius: $rounded-md;
+    }
 }
 
 .rounded-md {

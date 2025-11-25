@@ -5,4 +5,12 @@
     @media (max-width: $breakpoints-xl) {
         gap: 8px;
     }
+
+    @media (max-width: $breakpoints-lg) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        gap: 4px;
+    }
 }

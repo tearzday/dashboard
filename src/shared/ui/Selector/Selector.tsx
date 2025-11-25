@@ -35,7 +35,7 @@ export const Selector = ({selectorKey, placeholder, icon, options, onChange}: Se
     <div className={cls.selector} >
         <div className={cls.button} onClick={() => setOpen(prev => !prev)} ref={buttonRef} style={{ width }}>
             <Icon icon={icon}/>
-            <Typography>{value ? value.label : placeholder}</Typography>
+            <Typography className={cls.label}>{value ? value.label : placeholder}</Typography>
             <Icon icon={IconArrow}/>
         </div>
 
@@ -43,7 +43,7 @@ export const Selector = ({selectorKey, placeholder, icon, options, onChange}: Se
             <ul className={cls.menu}>
                 {options.map((option) => (
                     <li key={option.value} className={cls.item} onClick={() => handleSelect(option)}>
-                    {option.label}
+                        <Typography>{option.label}</Typography>
                     </li>
                 ))}
             </ul>

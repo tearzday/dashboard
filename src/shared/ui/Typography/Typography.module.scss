@@ -6,6 +6,14 @@
     @media (max-width: $breakpoints-2xl) {
         font-size: $text-xl;
     }
+
+    @media (max-width: $breakpoints-lg) {
+        font-size: $text-lg;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        font-size: $text-md;
+    }
 }
 
 .h2 {
@@ -15,6 +23,10 @@
 
     @media (max-width: $breakpoints-2xl) {
         font-size: $text-lg;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        font-size: $text-md;
     }
 }
 
@@ -35,6 +47,10 @@
     @media (max-width: $breakpoints-2xl) {
         font-size: $text-md;
     }
+
+    @media (max-width: $breakpoints-sm) {
+        font-size: $text-sm;
+    }
 }
 
 .body2 {
@@ -42,6 +58,10 @@
 
     @media (max-width: $breakpoints-2xl) {
         font-size: $text-sm;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        font-size: $text-xs;
     }
 }
 

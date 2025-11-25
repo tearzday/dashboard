@@ -24,6 +24,10 @@
     @media (max-width: $breakpoints-2xl) {
        padding: 12px; 
     }
+
+    @media (max-width: $breakpoints-md) {
+        padding: 6px;
+    }
 }
 
 .medium {

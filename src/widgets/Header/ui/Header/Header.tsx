@@ -8,8 +8,8 @@ export const Header = () => {
   return (
     <header className={cls.header}>
       <div className={cls.container}>
-        <img src={Avatar} alt='User avatar'/>
-        <Typography variant={TypographyVariant.H2}>Сергей, добро пожаловать!</Typography>
+        <img className={cls.avatar} src={Avatar} alt='User avatar'/>
+        <Typography className={cls.name} variant={TypographyVariant.H2}>Сергей, добро пожаловать!</Typography>
       </div>
       <div className={cls.container}>
         <Icon icon={IconSearch} variant={IconVariant.CIRCLE_BLACK} />

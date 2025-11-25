@@ -1,5 +1,23 @@
-.table {
+.container {
+  overflow: hidden;
+  border: 1px solid $color-border; 
+  margin: auto;
   width: 100%;
-  border-collapse: collapse;
 }
 
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  border-bottom: 1px solid $color-border;
+}
+
+.rounded-lg {
+  border-radius: $rounded-lg $rounded-lg 0px 0px;
+}
+
+.rounded-md {
+  border-radius: $rounded-md;
+}

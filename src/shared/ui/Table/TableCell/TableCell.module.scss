@@ -1,5 +1,5 @@
 .cell {
-    border: 1px solid $color-border;
+      position: relative;
 }
 
 th {
@@ -11,10 +11,20 @@ th {
 
 td {
     padding: 16px 24px;
-
     @media (max-width: $breakpoints-2xl) {
         padding: 8px 12px;
     }
+}
+
+td:not(:last-child)::after,
+th:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: $color-border;
 }
 
 .container {

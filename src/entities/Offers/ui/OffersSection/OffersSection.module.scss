@@ -13,4 +13,12 @@
     border-radius: 0px 0px $rounded-xl $rounded-xl;
     border: 1px solid $color-border;
     border-top: none;
+
+    @media (max-width: $breakpoints-md) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $breakpoints-sm) {
+        padding: 8px;
+    }
 }

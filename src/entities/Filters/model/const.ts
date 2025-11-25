@@ -65,8 +65,8 @@ export const FilterList: FilterItem[] = [
         label: 'Все площадки',
         options: [ 
             {
-                label: "GoogleAds",
-                value: "GoogleAds"
+                label: "Google Ads",
+                value: "Google Ads"
             },
             {
                 label: "TikTok Ads",
