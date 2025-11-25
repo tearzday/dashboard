@@ -4,10 +4,17 @@
 
 th {
     padding: 24px;
+    @media (max-width: $breakpoints-2xl) {
+        padding: 12px;
+    }
 }
 
 td {
     padding: 16px 24px;
+
+    @media (max-width: $breakpoints-2xl) {
+        padding: 8px 12px;
+    }
 }
 
 .container {

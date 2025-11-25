@@ -1,4 +1,8 @@
 .container {
     display: flex;
     gap: 12px;
+    
+    @media (max-width: $breakpoints-2xl) {
+        gap: 6px;
+    }
 }

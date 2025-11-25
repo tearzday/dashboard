@@ -6,6 +6,10 @@
     text-decoration: none;
     transition: $transition;
 
+    @media (max-width: $breakpoints-2xl) {
+        gap: 12px;
+    }
+
         &:hover {
         background-color: $color-gray;
         .icon, span {
@@ -16,10 +20,18 @@
 
 .big {
     padding: 16px;
+
+    @media (max-width: $breakpoints-2xl) {
+       padding: 12px; 
+    }
 }
 
 .medium {
-    padding: 0px 16px;
+    padding: 5px 16px;
+
+    @media (max-width: $breakpoints-2xl) {
+       padding: 5px 12px; 
+    }
 }
 
 .active {

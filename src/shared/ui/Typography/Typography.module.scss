@@ -2,27 +2,47 @@
     font-size: $text-2xl;
     font-family: $font-secondary;
     font-weight: 500;
+
+    @media (max-width: $breakpoints-2xl) {
+        font-size: $text-xl;
+    }
 }
 
 .h2 {
     font-size: $text-xl;
     font-family: $font-secondary;
     font-weight: 500;
+
+    @media (max-width: $breakpoints-2xl) {
+        font-size: $text-lg;
+    }
 }
 
 .h4 {
     font-size: $text-md;
     font-family: $font-secondary;
     font-weight: 500;
+
+    @media (max-width: $breakpoints-2xl) {
+        font-size: $text-sm;
+    }
 }
 
 .body1 {
     font-size: $text-lg;
     font-weight: 400;
+
+    @media (max-width: $breakpoints-2xl) {
+        font-size: $text-md;
+    }
 }
 
 .body2 {
     font-size: $text-md;
+
+    @media (max-width: $breakpoints-2xl) {
+        font-size: $text-sm;
+    }
 }
 
 .default {
