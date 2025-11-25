@@ -1,6 +1,6 @@
 import { StatusBadge } from '@/shared/ui';
 import type { StatusBadgeType } from '@/shared/ui/StatusBadge/const';
-import IconMore from '@/shared/assets/icons/More.svg';
+import IconMore from '@/shared/assets/icons/more.svg';
 import cls from './StatusCell.module.scss';
 
 interface StatusCellProps {
