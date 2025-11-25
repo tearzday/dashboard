@@ -8,6 +8,7 @@ body {
 
 .app {
     display: flex;
+    height: 100svh;
 }
 
 .content{
@@ -22,4 +23,11 @@ body {
     background-color: $color-body;
     width: 100%;
     min-height: calc(100svh - 89px);
+    overflow-y: auto;
+
+    
+
+    @media (max-width: $breakpoints-xl) {
+        padding: 24px 12px;
+    }
 }

@@ -10,35 +10,39 @@ import ExitIcon from '@/shared/assets/icons/exit.svg'
 export const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
-  const toggleSidebar = () => {
-    setCollapsed(prev => !prev)
-  }
+  const toggleSidebar = () => setCollapsed(prev => !prev)
 
   return (
-    <aside className={`${cls.sidebar} ${collapsed ? cls.collapsed : ''}`}>
-        <div className={cls.header}>
+    <div className={cls.container}>
+      {collapsed && (
+        <div className={cls.overlay} onClick={() => setCollapsed(false)} />
+      )}
+      <aside className={`${cls.sidebar} ${collapsed ? cls.collapsed : ''}`}>
+          <div className={`${cls.header}`}>
             <Logo />
-        </div>
-        <div className={cls.main}>
-            <WalletList />
-            {
-              SidebarData.map((section, index) => {
-                return (
-                  <Fragment key={section.title}>
-                    <SidebarSection title={section.title} items={section.items}/>
-                    {index < SidebarData.length - 1 && <Devider />}
-                  </Fragment>
-                )
-              })
-            }
-        </div>
-        <div className={cls.footer}>
+          </div>
+          <div className={`${cls.main}`}>
+            {collapsed && <WalletList />}
+            {SidebarData.map((section, index) => (
+              <Fragment key={section.title}>
+                <SidebarSection title={section.title} items={section.items} collapsed={collapsed}/>
+                {index < SidebarData.length - 1 && <Devider />}
+              </Fragment>
+            ))}
+          </div>
+          <div className={`${cls.footer}`}>
             <div className={cls.exit}>
               <img src={ExitIcon} alt='Exit icon'/>
-              <Typography>Выйти</Typography>
+              {collapsed && <Typography>Выйти</Typography>}
             </div>
-            <Icon className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`} icon={ArrowIcon} variant={IconVariant.ACCENT} onClick={toggleSidebar}/>
-        </div>
-    </aside>
+            <Icon
+              className={`${cls['toggle-icon']} ${collapsed ? '' : cls['toggle-icon--close']}`}
+              icon={ArrowIcon}
+              variant={IconVariant.ACCENT}
+              onClick={toggleSidebar}
+            />
+          </div>
+      </aside>
+    </div>
   )
 }

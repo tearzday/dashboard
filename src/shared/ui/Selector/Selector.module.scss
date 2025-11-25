@@ -13,6 +13,11 @@
     padding: 8px 16px;
     white-space: nowrap;
     cursor: pointer;
+
+    @media (max-width: $breakpoints-xl) {
+        padding: 4px 8px;
+        gap: 4px;
+    }
 }
 
 .menu {

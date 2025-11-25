@@ -1,4 +1,12 @@
 .container {
     display: flex;
     gap: 8px;
+
+    @media (max-width: $breakpoints-xl) {
+        justify-content: center;
+
+        & > :last-child {
+            display: none;
+        }
+    }
 }

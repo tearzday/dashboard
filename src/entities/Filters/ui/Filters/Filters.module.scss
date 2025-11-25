@@ -1,4 +1,8 @@
 .list {
     display: flex;
     gap: 16px;
+
+    @media (max-width: $breakpoints-xl) {
+        gap: 8px;
+    }
 }

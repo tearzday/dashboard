@@ -12,9 +12,9 @@ interface IconProps{
 
 export const IconComponent = ({icon: IconTag, variant, badge, className, onClick}: IconProps) => {
   return (
-    <div className={`${cls.icon} ${variant ? cls[variant] : ''} ${className ? className : ''}`} onClick={onClick}>
+    <div className={`${cls.container} ${variant ? cls[variant] : ''} ${className ? className : ''}`} onClick={onClick}>
         {badge && <div className={cls.badge}/>}
-        <IconTag />
+        <IconTag className={cls.icon}/>
     </div>
   )
 }
