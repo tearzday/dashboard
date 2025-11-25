@@ -1,1 +1,1 @@
-export { WalletList } from './ui/WalletList/WalletList'
+export { WalletList } from './ui/WalletList/WalletList';

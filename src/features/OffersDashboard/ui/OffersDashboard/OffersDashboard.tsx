@@ -1,10 +1,9 @@
-
-import { MetricsList } from '@/entities/Metrics'
-import { useGetDashboardDataQuery } from '../../services/getDashboardData'
-import { OffersSection } from '@/entities/Offers'
+import { MetricsList } from '@/entities/Metrics';
+import { useGetDashboardDataQuery } from '../../services/getDashboardData';
+import { OffersSection } from '@/entities/Offers';
 
 export function OffersDashboard() {
-  const { data, error, isLoading } = useGetDashboardDataQuery()
+  const { data, error, isLoading } = useGetDashboardDataQuery();
 
   return (
     <>
@@ -14,10 +13,10 @@ export function OffersDashboard() {
         <>Loading...</>
       ) : data ? (
         <>
-            <MetricsList />
-            <OffersSection />
+          <MetricsList />
+          <OffersSection />
         </>
       ) : null}
     </>
-  )
+  );
 }

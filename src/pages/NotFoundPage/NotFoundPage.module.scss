@@ -1,17 +1,17 @@
 .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
 }
 
 .image {
-    border-radius: $rounded-lg;
+  border-radius: $rounded-lg;
 
-     @media (max-width: $breakpoints-sm) {
-        width: 250px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    width: 250px;
+  }
 }

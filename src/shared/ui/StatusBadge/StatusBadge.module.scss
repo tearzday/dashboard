@@ -1,19 +1,19 @@
 .badge {
-    padding: 2px 12px;
-    border-radius: $rounded-lg;
+  padding: 2px 12px;
+  border-radius: $rounded-lg;
 }
 
 .active {
-    border: 1px solid transparentize($color-success, 0.7);
-    background-color: transparentize($color-success, 0.95);
+  border: 1px solid transparentize($color-success, 0.7);
+  background-color: transparentize($color-success, 0.95);
 }
 
 .paused {
-    border: 1px solid transparentize($color-warning, 0.7);
-    background-color: transparentize($color-warning, 0.95);
+  border: 1px solid transparentize($color-warning, 0.7);
+  background-color: transparentize($color-warning, 0.95);
 }
 
 .stopped {
-    border: 1px solid transparentize($color-error, 0.7);
-    background-color: transparentize($color-error, 0.95);
+  border: 1px solid transparentize($color-error, 0.7);
+  background-color: transparentize($color-error, 0.95);
 }

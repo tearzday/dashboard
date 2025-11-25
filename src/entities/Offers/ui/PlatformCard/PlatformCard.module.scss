@@ -1,22 +1,22 @@
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .name {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 250px;
 
-    @media (max-width: $breakpoints-sm) {
-        min-width: 200px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    min-width: 200px;
+  }
 }

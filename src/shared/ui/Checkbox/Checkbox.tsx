@@ -1,5 +1,5 @@
-import type { FC } from "react";
-import cls from "./Checkbox.module.scss";
+import type { FC } from 'react';
+import cls from './Checkbox.module.scss';
 
 interface CheckboxProps {
   checked?: boolean;
@@ -7,7 +7,11 @@ interface CheckboxProps {
   disabled?: boolean;
 }
 
-export const Checkbox: FC<CheckboxProps> = ({ checked, onChange, disabled }) => {
+export const Checkbox: FC<CheckboxProps> = ({
+  checked,
+  onChange,
+  disabled,
+}) => {
   return (
     <label className={cls.container}>
       <input

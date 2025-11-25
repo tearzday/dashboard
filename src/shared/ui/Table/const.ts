@@ -1,4 +1,4 @@
 export enum TableRounded {
-    MD = 'rounded-md',
-    LG = 'rounded-lg'
+  MD = 'rounded-md',
+  LG = 'rounded-lg',
 }

@@ -1,10 +1,10 @@
 export interface WallteFlag {
-    src: string,
-    alt: string
+  src: string;
+  alt: string;
 }
 
 export interface WalletsItemData {
-    currency: string,
-    value: string,
-    flag: WallteFlag
+  currency: string;
+  value: string;
+  flag: WallteFlag;
 }

@@ -1,160 +1,160 @@
 .container {
-    width: auto;
+  width: auto;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 70px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 70px;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-       width: 53px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    width: 53px;
+  }
 }
 
 .sidebar {
-    height: 100svh;
-    width: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transition: width $transition;
-    border-right: 1px solid $color-border;
-    background-color: $color-primary;
+  height: 100svh;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: width $transition;
+  border-right: 1px solid $color-border;
+  background-color: $color-primary;
 
-       @media (max-width: $breakpoints-sm) {
-       width: 53px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 70px;
+  }
+
+  @media (max-width: $breakpoints-sm) {
+    width: 53px;
+  }
 }
 
 .collapsed {
-    width: 300px;
+  width: 300px;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 220px;
-        position: absolute;
-        z-index: 2;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 220px;
+    position: absolute;
+    z-index: 2;
+  }
 }
 
 .header {
-    height: 89px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px;
-    width: 100%;
-    border-bottom: 1px solid $color-border;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  width: 100%;
+  border-bottom: 1px solid $color-border;
 
-    @media (max-width: $breakpoints-sm) {
-        height: 69px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    height: 69px;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-       height: 51px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    height: 51px;
+  }
 }
 
 .main {
-    padding: 48px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    flex: 1;
-    width: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 
-    @media (max-width: $breakpoints-xl) {
-        padding: 30px 10px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    padding: 30px 10px;
+  }
 
-    @media (max-width: $breakpoints-lg) {
-        gap: 24px;
-    }
+  @media (max-width: $breakpoints-lg) {
+    gap: 24px;
+  }
 
-    @media (max-width: $breakpoints-md) {
-        gap: 12px;
-        padding: 20px 8px;
-    }
+  @media (max-width: $breakpoints-md) {
+    gap: 12px;
+    padding: 20px 8px;
+  }
 
-     @media (max-width: $breakpoints-sm) {
-        gap: 6px;
-        padding: 8px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    gap: 6px;
+    padding: 8px;
+  }
 }
 
 .footer {
-    position: relative;
-    width: 100%;
-    padding: 48px 16px;
+  position: relative;
+  width: 100%;
+  padding: 48px 16px;
 
-    @media (max-width: $breakpoints-xl) {
-        padding: 30px 10px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    padding: 30px 10px;
+  }
 
-    @media (max-width: $breakpoints-md) {
-        padding: 20px 8px;
-    }
+  @media (max-width: $breakpoints-md) {
+    padding: 20px 8px;
+  }
 
-
-     @media (max-width: $breakpoints-sm) {
-        padding: 8px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    padding: 8px;
+  }
 }
 
 .toggle-icon {
-    position: absolute !important;
-    background: $color-primary;
-    right: -18px;
-    bottom: 100px;
-    cursor: pointer;
-    transform: rotate(90deg);
-    transition: transform $transition;
+  position: absolute !important;
+  background: $color-primary;
+  right: -20px;
+  bottom: 100px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: transform $transition;
 
-    @media (max-width: $breakpoints-md) {
-       bottom: 70px;
-    }
+  @media (max-width: $breakpoints-md) {
+    bottom: 70px;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-       bottom: 50px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    bottom: 50px;
+  }
 
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid $color-border;
+    border-left: 0;
+    border-radius: 50%;
+    mask: linear-gradient(to right, transparent 0 50%, $color-primary 50% 100%);
+    transform: rotate(-90deg);
+  }
 
+  &--close {
+    transform: rotate(-90deg);
     &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border: 1px solid $color-border;
-        border-left: 0;
-        border-radius: 50%;
-        mask: linear-gradient(to right, transparent 0 50%, $color-primary 50% 100%);
-        transform: rotate(-90deg);
+      transform: rotate(90deg);
     }
-
-    &--close {
-        transform: rotate(-90deg);
-        &::after {
-            transform: rotate(90deg);
-        }
-    }
+  }
 }
 
 .exit {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-
 .overlay {
-    background: transparentize($color-additional, 0.7);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: none;
+  background: transparentize($color-additional, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
 
-    @media (max-width: $breakpoints-xl) {
-        display: block;
-    }
+  @media (max-width: $breakpoints-xl) {
+    display: block;
+  }
 }

@@ -1,5 +1,5 @@
-import type { SelectorOption } from "@/shared/types";
-import type { iconMap } from "./const";
+import type { SelectorOption } from '@/shared/types';
+import type { iconMap } from './const';
 
 export interface FilterItem {
   key: IconKey;
@@ -8,8 +8,8 @@ export interface FilterItem {
 }
 
 export interface CurrentFilter {
-    key: string;
-    option: SelectorOption
+  key: string;
+  option: SelectorOption;
 }
 
-export type IconKey = keyof typeof iconMap 
+export type IconKey = keyof typeof iconMap;

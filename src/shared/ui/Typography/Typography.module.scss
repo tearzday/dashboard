@@ -1,98 +1,98 @@
 .h1 {
-    font-size: $text-2xl;
-    font-family: $font-secondary;
-    font-weight: 500;
+  font-size: $text-2xl;
+  font-family: $font-secondary;
+  font-weight: 500;
 
-    @media (max-width: $breakpoints-2xl) {
-        font-size: $text-xl;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    font-size: $text-xl;
+  }
 
-    @media (max-width: $breakpoints-lg) {
-        font-size: $text-lg;
-    }
+  @media (max-width: $breakpoints-lg) {
+    font-size: $text-lg;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        font-size: $text-md;
-    }
+  @media (max-width: $breakpoints-sm) {
+    font-size: $text-md;
+  }
 }
 
 .h2 {
-    font-size: $text-xl;
-    font-family: $font-secondary;
-    font-weight: 500;
+  font-size: $text-xl;
+  font-family: $font-secondary;
+  font-weight: 500;
 
-    @media (max-width: $breakpoints-2xl) {
-        font-size: $text-lg;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    font-size: $text-lg;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        font-size: $text-md;
-    }
+  @media (max-width: $breakpoints-sm) {
+    font-size: $text-md;
+  }
 }
 
 .h4 {
-    font-size: $text-md;
-    font-family: $font-secondary;
-    font-weight: 500;
+  font-size: $text-md;
+  font-family: $font-secondary;
+  font-weight: 500;
 
-    @media (max-width: $breakpoints-2xl) {
-        font-size: $text-sm;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    font-size: $text-sm;
+  }
 }
 
 .body1 {
-    font-size: $text-lg;
-    font-weight: 400;
+  font-size: $text-lg;
+  font-weight: 400;
 
-    @media (max-width: $breakpoints-2xl) {
-        font-size: $text-md;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    font-size: $text-md;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        font-size: $text-sm;
-    }
+  @media (max-width: $breakpoints-sm) {
+    font-size: $text-sm;
+  }
 }
 
 .body2 {
-    font-size: $text-md;
+  font-size: $text-md;
 
-    @media (max-width: $breakpoints-2xl) {
-        font-size: $text-sm;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    font-size: $text-sm;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        font-size: $text-xs;
-    }
+  @media (max-width: $breakpoints-sm) {
+    font-size: $text-xs;
+  }
 }
 
 .default {
-    color: $color-secondary;
+  color: $color-secondary;
 }
 
 .accent {
-    color: $color-accent;
+  color: $color-accent;
 }
 
 .additional {
-    color: $color-additional;
+  color: $color-additional;
 }
 
 .success {
-    color: $color-success;
+  color: $color-success;
 }
 
 .error {
-    color: $color-error;
+  color: $color-error;
 }
 
 .warning {
-    color: $color-warning;
+  color: $color-warning;
 }
 
 .medium {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .regular {
-    font-weight: 400;
+  font-weight: 400;
 }

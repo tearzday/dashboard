@@ -1,50 +1,50 @@
 .item {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    border-radius: $rounded-lg;
-    text-decoration: none;
-    transition: $transition;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: $rounded-lg;
+  text-decoration: none;
+  transition: $transition;
 
-    @media (max-width: $breakpoints-2xl) {
-        gap: 12px;
-    }
+  @media (max-width: $breakpoints-2xl) {
+    gap: 12px;
+  }
 
-        &:hover {
-        background-color: $color-gray;
-        .icon, span {
-            color: $color-accent !important;
-        }
+  &:hover {
+    background-color: $color-gray;
+    .icon,
+    span {
+      color: $color-accent !important;
     }
+  }
 }
 
 .big {
-    padding: 16px;
+  padding: 16px;
 
-    @media (max-width: $breakpoints-2xl) {
-       padding: 12px; 
-    }
+  @media (max-width: $breakpoints-2xl) {
+    padding: 12px;
+  }
 
-    @media (max-width: $breakpoints-md) {
-        padding: 6px;
-    }
+  @media (max-width: $breakpoints-md) {
+    padding: 6px;
+  }
 }
 
 .medium {
-    padding: 5px 16px;
+  padding: 5px 16px;
 
-    @media (max-width: $breakpoints-2xl) {
-       padding: 5px; 
-    }
+  @media (max-width: $breakpoints-2xl) {
+    padding: 5px;
+  }
 }
 
 .active {
-      background-color: $color-gray;
-      
+  background-color: $color-gray;
 }
 
 .icon {
-    &--active {
-        color: $color-accent;
-    }
+  &--active {
+    color: $color-accent;
+  }
 }

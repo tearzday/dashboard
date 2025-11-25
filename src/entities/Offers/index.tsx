@@ -1,1 +1,1 @@
-export { OffersSection } from './ui/OffersSection/OffersSection'
+export { OffersSection } from './ui/OffersSection/OffersSection';

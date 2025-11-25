@@ -1,8 +1,8 @@
-import { Card, Typography, TypographyVariant } from "@/shared/ui";
-import cls from "./PlatformsList.module.scss";
-import { useMemo } from "react";
-import { useAppSelector } from "@/app/hooks";
-import { PlatformCard } from "../PlatformCard/PlatformCard";
+import { Card, Typography, TypographyVariant } from '@/shared/ui';
+import cls from './PlatformsList.module.scss';
+import { useMemo } from 'react';
+import { useAppSelector } from '@/app/hooks';
+import { PlatformCard } from '../PlatformCard/PlatformCard';
 
 export const PlatformsList = () => {
   const platforms = useAppSelector((state) => state.platformsSort.platforms);
@@ -20,9 +20,7 @@ export const PlatformsList = () => {
 
   return (
     <Card className={cls.container}>
-      <Typography variant={TypographyVariant.H2}>
-        Рекламные площадки
-      </Typography>
+      <Typography variant={TypographyVariant.H2}>Рекламные площадки</Typography>
 
       <div className={cls.list}>
         {platformsData.map((p) => (

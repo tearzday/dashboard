@@ -1,19 +1,19 @@
 .cell {
-      position: relative;
+  position: relative;
 }
 
 th {
-    padding: 24px;
-    @media (max-width: $breakpoints-2xl) {
-        padding: 12px;
-    }
+  padding: 24px;
+  @media (max-width: $breakpoints-2xl) {
+    padding: 12px;
+  }
 }
 
 td {
-    padding: 16px 24px;
-    @media (max-width: $breakpoints-2xl) {
-        padding: 8px 12px;
-    }
+  padding: 16px 24px;
+  @media (max-width: $breakpoints-2xl) {
+    padding: 8px 12px;
+  }
 }
 
 td:not(:last-child)::after,
@@ -28,13 +28,13 @@ th:not(:last-child)::after {
 }
 
 .container {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .text {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 }

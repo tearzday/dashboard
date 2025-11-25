@@ -1,49 +1,50 @@
 .selector {
-    position: relative;}
+  position: relative;
+}
 
 .button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: space-between;
-    border: 1px solid $color-border;
-    border-radius: $rounded-lg;
-    padding: 8px 16px;
-    background-color: $color-primary;
-    white-space: nowrap;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  border: 1px solid $color-border;
+  border-radius: $rounded-lg;
+  padding: 8px 16px;
+  background-color: $color-primary;
+  white-space: nowrap;
+  cursor: pointer;
 
-    @media (max-width: $breakpoints-xl) {
-        padding: 4px 8px;
-        gap: 4px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    padding: 4px 8px;
+    gap: 4px;
+  }
 }
 
 .menu {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .item {
-    background-color: $color-gray;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid $color-border;
+  background-color: $color-gray;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid $color-border;
 
-    &:hover {
-        background-color: $color-additional;
-    }
+  &:hover {
+    background-color: $color-additional;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        padding: 5px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    padding: 5px;
+  }
 }
 
 .label {
-    @media (max-width: $breakpoints-sm) {
-        display: none;
-    }
+  @media (max-width: $breakpoints-sm) {
+    display: none;
+  }
 }

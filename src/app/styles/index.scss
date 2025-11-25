@@ -2,32 +2,30 @@
 @use './fonts.scss';
 
 body {
-    background-color: $color-primary;
-    font-family: $font-primary;
+  background-color: $color-primary;
+  font-family: $font-primary;
 }
 
 .app {
-    display: flex;
-    height: 100svh;
+  display: flex;
+  height: 100svh;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
 }
 
 .page-wrapper {
-    padding: 24px;
-    background-color: $color-body;
-    width: 100%;
-    min-height: calc(100svh - 89px);
-    overflow-y: auto;
+  padding: 24px;
+  background-color: $color-body;
+  width: 100%;
+  min-height: calc(100svh - 89px);
+  overflow-y: auto;
 
-    
-
-    @media (max-width: $breakpoints-xl) {
-        padding: 18px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    padding: 18px;
+  }
 }

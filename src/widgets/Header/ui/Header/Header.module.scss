@@ -1,35 +1,35 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 32px;
-    border-bottom: 1px solid $color-border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 32px;
+  border-bottom: 1px solid $color-border;
 
-    @media (max-width: $breakpoints-sm) {
-        padding: 10px 15px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    padding: 10px 15px;
+  }
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
-    @media (max-width: $breakpoints-sm) {
-        gap: 8px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    gap: 8px;
+  }
 }
 
 .avatar {
-    @media (max-width: $breakpoints-sm) {
-       width: 30px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    width: 30px;
+  }
 }
 
 .name {
-    @media (max-width: $breakpoints-sm) {
-       display: none;
-    }
+  @media (max-width: $breakpoints-sm) {
+    display: none;
+  }
 }

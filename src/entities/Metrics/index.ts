@@ -1,1 +1,1 @@
-export { MetricsList } from './ui/MetricsList/MetricsList'
+export { MetricsList } from './ui/MetricsList/MetricsList';

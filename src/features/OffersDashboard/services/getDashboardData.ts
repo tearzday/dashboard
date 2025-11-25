@@ -1,6 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import type { IDashboardData } from '../model/types'
-
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import type { IDashboardData } from '../model/types';
 
 export const dashboardApi = createApi({
   reducerPath: 'dashboardApi',
@@ -10,8 +9,6 @@ export const dashboardApi = createApi({
       query: () => `mock-data.json`,
     }),
   }),
+});
 
-})
-
-
-export const { useGetDashboardDataQuery } = dashboardApi
+export const { useGetDashboardDataQuery } = dashboardApi;

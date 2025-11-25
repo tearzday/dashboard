@@ -1,8 +1,8 @@
-import { useGetDashboardDataQuery } from "@/features/OffersDashboard/services/getDashboardData";
-import { useMemo } from "react";
-import type { StatusBadgeType } from "@/shared/ui/StatusBadge/const";
-import { OfferCard } from "../OfferCard/OfferCard";
-import cls from "./OffersList.module.scss"
+import { useGetDashboardDataQuery } from '@/features/OffersDashboard/services/getDashboardData';
+import { useMemo } from 'react';
+import type { StatusBadgeType } from '@/shared/ui/StatusBadge/const';
+import { OfferCard } from '../OfferCard/OfferCard';
+import cls from './OffersList.module.scss';
 
 export const OffersList = () => {
   const { data } = useGetDashboardDataQuery();
@@ -15,7 +15,7 @@ export const OffersList = () => {
       id: offer.id,
       name: offer.name,
       platforms: offer.platforms,
-      launchDate: new Date(offer.launchDate).toLocaleDateString("ru-RU"),
+      launchDate: new Date(offer.launchDate).toLocaleDateString('ru-RU'),
       balance: offer.balance,
       spent: offer.spent,
       status: offer.status as StatusBadgeType,

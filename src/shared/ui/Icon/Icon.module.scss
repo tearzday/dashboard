@@ -1,85 +1,85 @@
 .container {
-    color: $color-icon-default;
-    position: relative;
-        display: flex;
-    align-items: center;
-    justify-content: center;
+  color: $color-icon-default;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
-    transform: scale(1);
+  transform: scale(1);
 
-    @media (max-width: $breakpoints-xl) {
-        transform: scale(0.8);
-    }
+  @media (max-width: $breakpoints-xl) {
+    transform: scale(0.8);
+  }
 }
 
 .circle {
-    width: 40px;
-    height: 40px;
-    border-radius: $rounded-full;
-    border: 1px solid $color-border;
+  width: 40px;
+  height: 40px;
+  border-radius: $rounded-full;
+  border: 1px solid $color-border;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 30px;
-        height: 30px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .circle-accent {
-    width: 40px;
-    height: 40px;
-    border-radius: $rounded-full;
-    background-color: $color-gray;
-    color: $color-accent;
+  width: 40px;
+  height: 40px;
+  border-radius: $rounded-full;
+  background-color: $color-gray;
+  color: $color-accent;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 30px;
-        height: 30px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .circle-black {
-    width: 40px;
-    height: 40px;
-    border-radius: $rounded-full;
-    border: 1px solid $color-border;
-    color: $color-secondary;
-    cursor: pointer;
-    transition: background-color $transition;
+  width: 40px;
+  height: 40px;
+  border-radius: $rounded-full;
+  border: 1px solid $color-border;
+  color: $color-secondary;
+  cursor: pointer;
+  transition: background-color $transition;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 30px;
-        height: 30px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 30px;
+    height: 30px;
+  }
 
-    &:hover {
-        background-color: $color-border;
-    }
+  &:hover {
+    background-color: $color-border;
+  }
 }
 
 .black {
-    color: $color-secondary;
+  color: $color-secondary;
 }
 
 .badge {
-    width: 8px;
-    height: 8px;
-    background-color: $color-accent;
-    border-radius: $rounded-full;
-    position: absolute;
-    top: 3px;
-    right: 0px;
+  width: 8px;
+  height: 8px;
+  background-color: $color-accent;
+  border-radius: $rounded-full;
+  position: absolute;
+  top: 3px;
+  right: 0px;
 }
 
 .accent {
-    width: 40px;
-    height: 40px;
-    border-radius: $rounded-full;
-    color: $color-accent;
+  width: 40px;
+  height: 40px;
+  border-radius: $rounded-full;
+  color: $color-accent;
 
-    @media (max-width: $breakpoints-xl) {
-        width: 30px;
-        height: 30px;
-    }
+  @media (max-width: $breakpoints-xl) {
+    width: 30px;
+    height: 30px;
+  }
 }

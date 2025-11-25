@@ -1,28 +1,28 @@
 .page {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-    @media (max-width: $breakpoints-md) {
-        gap: 18px;
-    }
+  @media (max-width: $breakpoints-md) {
+    gap: 18px;
+  }
 
-    @media (max-width: $breakpoints-sm) {
-        gap: 12px;
-    }
+  @media (max-width: $breakpoints-sm) {
+    gap: 12px;
+  }
 }
 
 .chip {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .arrow {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .filters {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }

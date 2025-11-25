@@ -1,4 +1,4 @@
-import type { MetricKeys } from "./types";
+import type { MetricKeys } from './types';
 import IconExpenses from '@/shared/assets/icons/finance.svg?react';
 import IconClicks from '@/shared/assets/icons/click.svg?react';
 import IconCPC from '@/shared/assets/icons/cpc.svg?react';
@@ -9,7 +9,7 @@ export const titleMap: Record<MetricKeys, string> = {
   clicks: 'Клики',
   cpc: 'CPC',
   cpa: 'CPA',
-}
+};
 
 export const iconMetricsMap: Record<MetricKeys, React.FC> = {
   expenses: IconExpenses,

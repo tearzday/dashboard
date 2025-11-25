@@ -1,19 +1,19 @@
-import type { StatusBadgeType } from "@/shared/ui/StatusBadge/const";
+import type { StatusBadgeType } from '@/shared/ui/StatusBadge/const';
 
 export interface PlatformsData {
-    id: string;
-    name: string;
-    color: string;
+  id: string;
+  name: string;
+  color: string;
 }
 
 export interface OfferData {
-    id: string;
-    name: string;
-    status: StatusBadgeType;
-    launchDate: string;
-    balance: number;
-    spent: number;
-    platforms: PlatformsData[];
+  id: string;
+  name: string;
+  status: StatusBadgeType;
+  launchDate: string;
+  balance: number;
+  spent: number;
+  platforms: PlatformsData[];
 }
 
 export interface PlatformData {

@@ -1,7 +1,6 @@
-import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { OfferData } from "../model/types";
-import type { SortOrder } from "@/shared/types";
-
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+import type { OfferData } from '../model/types';
+import type { SortOrder } from '@/shared/types';
 
 interface OffersState {
   offers: OfferData[];
@@ -12,11 +11,11 @@ interface OffersState {
 const initialState: OffersState = {
   offers: [],
   sortKey: null,
-  sortOrder: "asc",
+  sortOrder: 'asc',
 };
 
 const offersSlice = createSlice({
-  name: "offers",
+  name: 'offers',
   initialState,
   reducers: {
     setOffers(state, action: PayloadAction<OfferData[]>) {
@@ -26,47 +25,46 @@ const offersSlice = createSlice({
     sortOffers(state, action: PayloadAction<string>) {
       const key = action.payload;
 
-
       if (state.sortKey === key) {
-        state.sortOrder = state.sortOrder === "asc" ? "desc" : "asc";
+        state.sortOrder = state.sortOrder === 'asc' ? 'desc' : 'asc';
       } else {
         state.sortKey = key;
-        state.sortOrder = "asc";
+        state.sortOrder = 'asc';
       }
 
       state.offers.sort((a, b) => {
         const aValue = a[key as keyof OfferData];
         const bValue = b[key as keyof OfferData];
 
-        if (key === "launchDate") {
+        if (key === 'launchDate') {
           const aDate = new Date(aValue as string).getTime();
           const bDate = new Date(bValue as string).getTime();
-          return state.sortOrder === "asc" ? aDate - bDate : bDate - aDate;
+          return state.sortOrder === 'asc' ? aDate - bDate : bDate - aDate;
         }
 
-        if (typeof aValue === "number" && typeof bValue === "number") {
-          return state.sortOrder === "asc" ? aValue - bValue : bValue - aValue;
+        if (typeof aValue === 'number' && typeof bValue === 'number') {
+          return state.sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         }
 
-        if (typeof aValue === "string" && typeof bValue === "string") {
-          return state.sortOrder === "asc"
+        if (typeof aValue === 'string' && typeof bValue === 'string') {
+          return state.sortOrder === 'asc'
             ? aValue.localeCompare(bValue)
             : bValue.localeCompare(aValue);
         }
 
-        if (key === "platforms") {
+        if (key === 'platforms') {
           const aId = (aValue as { id: string }[])[0].id;
           const bId = (bValue as { id: string }[])[0].id;
 
-          return state.sortOrder === "asc"
+          return state.sortOrder === 'asc'
             ? aId.localeCompare(bId)
             : bId.localeCompare(aId);
         }
 
         return 0;
       });
-    }
-  }
+    },
+  },
 });
 
 export const { setOffers, sortOffers } = offersSlice.actions;

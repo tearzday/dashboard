@@ -1,19 +1,19 @@
-import { Checkbox, Icon, IconVariant } from '@/shared/ui'
-import { platformIconsMap } from '@/entities/Offers/model/const'
-import cls from './PlatformCell.module.scss'
-import { useState } from 'react'
+import { Checkbox, Icon, IconVariant } from '@/shared/ui';
+import { platformIconsMap } from '@/entities/Offers/model/const';
+import cls from './PlatformCell.module.scss';
+import { useState } from 'react';
 
 interface PlatformCellProps {
-    id: string
+  id: string;
 }
 
-export const PlatformCell = ({id}: PlatformCellProps) => {
-    const [checked, setChecked] = useState<boolean>(false)
-      
+export const PlatformCell = ({ id }: PlatformCellProps) => {
+  const [checked, setChecked] = useState<boolean>(false);
+
   return (
     <div className={cls.container}>
-        <Checkbox checked={checked} onChange={setChecked}/>
-        <Icon icon={platformIconsMap[id]} variant={IconVariant.CIRCLE}/>
+      <Checkbox checked={checked} onChange={setChecked} />
+      <Icon icon={platformIconsMap[id]} variant={IconVariant.CIRCLE} />
     </div>
-  )
-}
+  );
+};

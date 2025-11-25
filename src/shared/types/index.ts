@@ -1,12 +1,12 @@
 export interface TableHeader {
-    key: string;
-    label: string;
-    checkbox?: boolean;
+  key: string;
+  label: string;
+  checkbox?: boolean;
 }
 
 export interface CardInfoItem {
-    title: string,
-    value: string,
+  title: string;
+  value: string;
 }
 
 export interface SelectorOption {
@@ -14,4 +14,4 @@ export interface SelectorOption {
   value: string;
 }
 
-export type SortOrder = "asc" | "desc";
+export type SortOrder = 'asc' | 'desc';

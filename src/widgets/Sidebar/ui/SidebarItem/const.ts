@@ -1,4 +1,4 @@
 export enum SidbarItemVariant {
-    BIG = 'big',
-    MEDIUM = 'medium'
+  BIG = 'big',
+  MEDIUM = 'medium',
 }
