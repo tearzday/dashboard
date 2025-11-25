@@ -6,9 +6,20 @@ import { setCurrentFilter } from '@/entities/Filters/slice/FilterSlice'
 import { OffersTable } from '../OffersTable/OffersTable'
 import { CardInfo } from '@/shared/ui/CardInfo/CardInfo'
 import { PlatformsTable } from '../PlatformsTable/PlatformsTable'
+import { useEffect, useState } from 'react'
+import { OffersList } from '../OffersList/OffersList'
 
 export const OffersSection = () => {
+  const [isMobile, setIsMobile] = useState(false)
   const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1024)
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <Card rounded={CardRounded.XXL}>
@@ -16,7 +27,7 @@ export const OffersSection = () => {
             <Typography variant={TypographyVariant.H2}>Офферы</Typography>
             <Selector selectorKey='export' icon={ExportIcon} placeholder='Экспорт' options={[]} onChange={(key, option) => dispatch(setCurrentFilter({ key, option }))}/>
         </div>
-          <OffersTable />
+          {isMobile ? < OffersList />:<OffersTable />}
           <div className={cls.row}>
             <CardInfo />
             <PlatformsTable />

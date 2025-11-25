@@ -1,14 +1,14 @@
 import type { PlatformsData } from '@/entities/Offers/model/types'
 import { Icon, IconVariant } from '@/shared/ui'
 import { platformIconsMap } from '@/entities/Offers/model/const'
-import cls from './PlatformsCell.module.scss'
+import cls from './PlatformsList.module.scss'
 
-interface PlatformsCellProps {
+interface PlatformsListProps {
   platforms: PlatformsData[]
 }
 
 
-export const PlatformsCell = ({platforms}: PlatformsCellProps) => {
+export const PlatformsList = ({platforms}: PlatformsListProps) => {
   return (
     <div className={cls.container}>
     {

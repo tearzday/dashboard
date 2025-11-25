@@ -1,3 +1,5 @@
+import type { StatusBadgeType } from "@/shared/ui/StatusBadge/const";
+
 export interface PlatformsData {
     id: string;
     name: string;
@@ -7,7 +9,7 @@ export interface PlatformsData {
 export interface OfferData {
     id: string;
     name: string;
-    status: string;
+    status: StatusBadgeType;
     launchDate: string;
     balance: number;
     spent: number;
